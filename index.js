@@ -5576,7 +5576,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.get2_text.parent = this;
 	this.get2_text.setTransform(485.15,275.8);
 
-	this.get1_text = new cjs.Text("STR: 0.04", "bold 12px 'Arial'", "#FFCCCC");
+	this.get1_text = new cjs.Text("力量: 0.04", "bold 12px 'Arial'", "#FFCCCC");
 	this.get1_text.name = "get1_text";
 	this.get1_text.lineHeight = 15;
 	this.get1_text.lineWidth = 198;
@@ -5586,63 +5586,63 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.instance = new lib.CachedBmp_49();
 	this.instance.setTransform(471.1,239.8,0.9987,0.9987);
 
-	this.Ebonus4_text = new cjs.Text("Bleed Chance: 7.25%", "bold 12px 'Arial'", "#FFFFFF");
+	this.Ebonus4_text = new cjs.Text("流血几率: 7.25%", "bold 12px 'Arial'", "#FFFFFF");
 	this.Ebonus4_text.name = "Ebonus4_text";
 	this.Ebonus4_text.lineHeight = 15;
 	this.Ebonus4_text.lineWidth = 196;
 	this.Ebonus4_text.parent = this;
 	this.Ebonus4_text.setTransform(485.05,224.15);
 
-	this.Ebonus3_text = new cjs.Text("Block Amount: 30%", "bold 12px 'Arial'", "#FFFFFF");
+	this.Ebonus3_text = new cjs.Text("格挡数量: 30%", "bold 12px 'Arial'", "#FFFFFF");
 	this.Ebonus3_text.name = "Ebonus3_text";
 	this.Ebonus3_text.lineHeight = 15;
 	this.Ebonus3_text.lineWidth = 196;
 	this.Ebonus3_text.parent = this;
 	this.Ebonus3_text.setTransform(485.05,206.45);
 
-	this.Ebonus2_text = new cjs.Text("Block Chance: 8%", "bold 12px 'Arial'", "#FFFFFF");
+	this.Ebonus2_text = new cjs.Text("格挡几率: 8%", "bold 12px 'Arial'", "#FFFFFF");
 	this.Ebonus2_text.name = "Ebonus2_text";
 	this.Ebonus2_text.lineHeight = 15;
 	this.Ebonus2_text.lineWidth = 196;
 	this.Ebonus2_text.parent = this;
 	this.Ebonus2_text.setTransform(484.95,188.75);
 
-	this.Ebonus1_text = new cjs.Text("Penetration: 6", "bold 12px 'Arial'", "#FFFFFF");
+	this.Ebonus1_text = new cjs.Text("穿透: 6", "bold 12px 'Arial'", "#FFFFFF");
 	this.Ebonus1_text.name = "Ebonus1_text";
 	this.Ebonus1_text.lineHeight = 15;
 	this.Ebonus1_text.lineWidth = 197;
 	this.Ebonus1_text.parent = this;
 	this.Ebonus1_text.setTransform(484.95,171.05);
 
-	this.EHPreg_text = new cjs.Text("HP Regeneration: 9.1/s", "bold 12px 'Arial'", "#CCFFCC");
+	this.EHPreg_text = new cjs.Text("生命值回复: 9.1/s", "bold 12px 'Arial'", "#CCFFCC");
 	this.EHPreg_text.name = "EHPreg_text";
 	this.EHPreg_text.lineHeight = 15;
 	this.EHPreg_text.lineWidth = 197;
 	this.EHPreg_text.parent = this;
 	this.EHPreg_text.setTransform(484.85,117.95);
 
-	this.Eavoid_text = new cjs.Text("Avoid: 20 (35%)", "bold 12px 'Arial'", "#FFFFCC");
+	this.Eavoid_text = new cjs.Text("闪避: 20 (35%)", "bold 12px 'Arial'", "#FFFFCC");
 	this.Eavoid_text.name = "Eavoid_text";
 	this.Eavoid_text.lineHeight = 15;
 	this.Eavoid_text.lineWidth = 198;
 	this.Eavoid_text.parent = this;
 	this.Eavoid_text.setTransform(484.95,153.35);
 
-	this.Eprec_text = new cjs.Text("Precision: 10 (70% hit)", "bold 12px 'Arial'", "#FFFFCC");
+	this.Eprec_text = new cjs.Text("精准: 10 (70% hit)", "bold 12px 'Arial'", "#FFFFCC");
 	this.Eprec_text.name = "Eprec_text";
 	this.Eprec_text.lineHeight = 15;
 	this.Eprec_text.lineWidth = 198;
 	this.Eprec_text.parent = this;
 	this.Eprec_text.setTransform(484.85,135.65);
 
-	this.Easpd_text = new cjs.Text("Atk. Speed: 0.81 sec. (x1)", "bold 14px 'Arial'", "#FFFFCC");
+	this.Easpd_text = new cjs.Text("攻击速度: 0.81 sec. (x1)", "bold 14px 'Arial'", "#FFFFCC");
 	this.Easpd_text.name = "Easpd_text";
 	this.Easpd_text.lineHeight = 18;
 	this.Easpd_text.lineWidth = 197;
 	this.Easpd_text.parent = this;
 	this.Easpd_text.setTransform(484.85,98.35);
 
-	this.Edef_text = new cjs.Text("Defence: 3.15 {45%}", "bold 14px 'Arial'", "#CCEEFF");
+	this.Edef_text = new cjs.Text("防御: 3.15 {45%}", "bold 14px 'Arial'", "#CCEEFF");
 	this.Edef_text.name = "Edef_text";
 	this.Edef_text.lineHeight = 18;
 	this.Edef_text.lineWidth = 197;
@@ -5730,28 +5730,28 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.aspd_text.parent = this;
 	this.aspd_text.setTransform(268.25,82.8);
 
-	this.def_text = new cjs.Text("Defence: 3.15 {45%}", "bold 14px 'Arial'", "#CCEEFF");
+	this.def_text = new cjs.Text("防御: 3.15 {45%}", "bold 14px 'Arial'", "#CCEEFF");
 	this.def_text.name = "def_text";
 	this.def_text.lineHeight = 18;
 	this.def_text.lineWidth = 202;
 	this.def_text.parent = this;
 	this.def_text.setTransform(268.25,63.2);
 
-	this.atk_text = new cjs.Text("Attack: 5.16 - 13.4 {55%}", "bold 14px 'Arial'", "#FFCCCC");
+	this.atk_text = new cjs.Text("攻击: 5.16 - 13.4 {55%}", "bold 14px 'Arial'", "#FFCCCC");
 	this.atk_text.name = "atk_text";
 	this.atk_text.lineHeight = 18;
 	this.atk_text.lineWidth = 216;
 	this.atk_text.parent = this;
 	this.atk_text.setTransform(268.1562,43.6,0.936,1);
 
-	this.hp_text = new cjs.Text("Max HP: 227", "bold 14px 'Arial'", "#CCFFCC");
+	this.hp_text = new cjs.Text("生命值上限: 227", "bold 14px 'Arial'", "#CCFFCC");
 	this.hp_text.name = "hp_text";
 	this.hp_text.lineHeight = 18;
 	this.hp_text.lineWidth = 202;
 	this.hp_text.parent = this;
 	this.hp_text.setTransform(268.25,23.95);
 
-	this.xp_text = new cjs.Text("XP: 150 / 600 (25%)", "bold 14px 'Arial'", "#FFFFFF");
+	this.xp_text = new cjs.Text("经验值: 150 / 600 (25%)", "bold 14px 'Arial'", "#FFFFFF");
 	this.xp_text.name = "xp_text";
 	this.xp_text.lineHeight = 18;
 	this.xp_text.lineWidth = 207;
@@ -5948,7 +5948,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.str_t.parent = this;
 	this.str_t.setTransform(25.3,33.7215,1.5195,1.5195);
 
-	this.nameEn = new cjs.Text("Slime [Lv. 13]", "bold 9px 'Arial'", "#FFFFFF");
+	this.nameEn = new cjs.Text("史莱姆 [等级. 13]", "bold 9px 'Arial'", "#FFFFFF");
 	this.nameEn.name = "nameEn";
 	this.nameEn.textAlign = "center";
 	this.nameEn.lineHeight = 12;
@@ -5956,7 +5956,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.nameEn.parent = this;
 	this.nameEn.setTransform(589.2,6.1,1.8721,1.8721);
 
-	this.youlv = new cjs.Text("You [Lv. 12]", "bold 9px 'Arial'", "#FFFFFF");
+	this.youlv = new cjs.Text("你 [等级. 12]", "bold 9px 'Arial'", "#FFFFFF");
 	this.youlv.name = "youlv";
 	this.youlv.textAlign = "center";
 	this.youlv.lineHeight = 12;
@@ -5984,14 +5984,14 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.respawnB.setTransform(171.25,163.55,1,1,0,0,0,56.8,16.2);
 	new cjs.ButtonHelper(this.respawnB, 0, 1, 2);
 
-	this.text = new cjs.Text("You can respawn 60 meters closer to center and lose 50% of gained exp to next level", "bold 18px 'Arial'");
+	this.text = new cjs.Text("你可以在离中心60米的地方重生，并且失去到达下一级的50%的经验值", "bold 18px 'Arial'");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 22;
 	this.text.lineWidth = 293;
 	this.text.parent = this;
 	this.text.setTransform(169.9,58.3);
 
-	this.text_1 = new cjs.Text("You defeated", "bold 32px 'Arial'");
+	this.text_1 = new cjs.Text("你被打败了", "bold 32px 'Arial'");
 	this.text_1.textAlign = "center";
 	this.text_1.lineHeight = 38;
 	this.text_1.lineWidth = 332;
@@ -10017,7 +10017,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#FFFFFF";
 			}
 			if (stat == RGDUR) {
-				txt.text = "狂暴持续时间: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "狂暴持续时间: " + format(player.stats[stat].value) + " 秒.";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == INTER) {
@@ -10033,7 +10033,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#FF6600";
 			}
 			if (stat == BURNDUR) {
-				txt.text = "燃烧持续时间: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "燃烧持续时间: " + format(player.stats[stat].value) + " 秒.";
 				txt.color = "#FF6600";
 			}
 			if (stat == SLOWCH) {
@@ -10045,7 +10045,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#0099CC";
 			}
 			if (stat == SLOWDUR) {
-				txt.text = "减速持续时间: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "减速持续时间: " + format(player.stats[stat].value) + " 秒.";
 				txt.color = "#0099CC";
 			}
 			if (stat == DOUBLECH) {
@@ -10069,7 +10069,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#AC6A28";
 			}
 			if (stat == STUNDUR) {
-				txt.text = "眩晕持续时间: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "眩晕持续时间: " + format(player.stats[stat].value) + " 秒.";
 				txt.color = "#AC6A28";
 			}
 			if (stat == BLINDCH) {
@@ -10101,7 +10101,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#33FFFF";
 			}
 			if (stat == FRZDUR) {
-				txt.text = "冻结时间: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "冻结时间: " + format(player.stats[stat].value) + " 秒.";
 				txt.color = "#33FFFF";
 			}
 			if (stat == POSCH) {
@@ -10113,7 +10113,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#66FF00";
 			}
 			if (stat == POSDUR) {
-				txt.text = "中毒持续时间: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "中毒持续时间: " + format(player.stats[stat].value) + " 秒.";
 				txt.color = "#66FF00";
 			}
 			if (stat == SANDCH) {
@@ -10258,7 +10258,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == RGDUR) {
-				txt.text = "狂暴持续时间: " + format(stat.value) + " sec.";
+				txt.text = "狂暴持续时间: " + format(stat.value) + " 秒.";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == INTER) {
@@ -10274,7 +10274,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#FF6600";
 			}
 			if (stat.type == BURNDUR) {
-				txt.text = "燃烧持续时间: " + format(stat.value) + " sec.";
+				txt.text = "燃烧持续时间: " + format(stat.value) + " 秒.";
 				txt.color = "#FF6600";
 			}
 			if (stat.type == SLOWCH) {
@@ -10286,7 +10286,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#0099CC";
 			}
 			if (stat.type == SLOWDUR) {
-				txt.text = "减速持续时长: " + format(stat.value) + " sec.";
+				txt.text = "减速持续时长: " + format(stat.value) + " 秒.";
 				txt.color = "#0099CC";
 			}
 			if (stat.type == DOUBLECH) {
@@ -10310,7 +10310,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#AC6A28";
 			}
 			if (stat.type == STUNDUR) {
-				txt.text = "眩晕持续时长: " + format(stat.value) + " sec.";
+				txt.text = "眩晕持续时长: " + format(stat.value) + " 秒.";
 				txt.color = "#AC6A28";
 			}
 			if (stat.type == BLINDCH) {
@@ -10342,7 +10342,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#33FFFF";
 			}
 			if (stat.type == FRZDUR) {
-				txt.text = "冻结持续时间: " + format(stat.value) + " sec.";
+				txt.text = "冻结持续时间: " + format(stat.value) + " 秒.";
 				txt.color = "#33FFFF";
 			}
 			if (stat.type == POSCH) {
@@ -10354,7 +10354,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				txt.color = "#66FF00";
 			}
 			if (stat.type == POSDUR) {
-				txt.text = "中毒持续时长: " + format(stat.value) + " sec.";
+				txt.text = "中毒持续时长: " + format(stat.value) + " 秒.";
 				txt.color = "#66FF00";
 			}
 			if (stat.type == SANDCH) {
