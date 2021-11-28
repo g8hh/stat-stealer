@@ -5984,7 +5984,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.respawnB.setTransform(171.25,163.55,1,1,0,0,0,56.8,16.2);
 	new cjs.ButtonHelper(this.respawnB, 0, 1, 2);
 
-	this.text = new cjs.Text("你可以在离中心60米的地方重生，并且失去到达下一级的50%的经验值", "bold 18px 'Arial'");
+	this.text = new cjs.Text("你可以在离中心60米的地方重生，\n并且失去到达下一级的50%的经验值", "bold 18px 'Arial'");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 22;
 	this.text.lineWidth = 293;
