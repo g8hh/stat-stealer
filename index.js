@@ -5758,7 +5758,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.xp_text.parent = this;
 	this.xp_text.setTransform(254,4.35);
 
-	this.text_1 = new cjs.Text("Game made by Denisolenison [α.1.0.0]\nIdea from \"Absorber\" by DirkF17", "bold 14px 'Arial'", "#FFFFFF");
+	this.text_1 = new cjs.Text("游戏作者 Denisolenison [α.1.0.0]\n灵感来自 \"吸收器\" by DirkF17", "bold 14px 'Arial'", "#FFFFFF");
 	this.text_1.textAlign = "center";
 	this.text_1.lineHeight = 16;
 	this.text_1.lineWidth = 305;
@@ -6119,7 +6119,7 @@ p.nominalBounds = new cjs.Rectangle(-2.9,0,21.299999999999997,25.3);
 	this.timeline.addTween(cjs.Tween.get(this.ii).wait(2));
 
 	// Слой_1
-	this.text = new cjs.Text("Absorb", "bold 9px 'Arial'", "#FFFFFF");
+	this.text = new cjs.Text("吸收", "bold 9px 'Arial'", "#FFFFFF");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 42;
@@ -7644,72 +7644,72 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			
 			if (eClass == 0) {
 				if (eType == 0) {
-					newEnemy.name = "Blue Slime";
+					newEnemy.name = "蓝色史莱姆";
 				}
 				if (eType == 1) {
-					newEnemy.name = "Red Slime";
+					newEnemy.name = "红色史莱姆";
 				}
 				if (eType == 2) {
-					newEnemy.name = "Green Slime";
+					newEnemy.name = "绿色史莱姆";
 				}
 				if (eType == 3) {
-					newEnemy.name = "Yellow Slime";
+					newEnemy.name = "黄色史莱姆";
 				}
 				if (eType == 4) {
-					newEnemy.name = "Solid Slime";
+					newEnemy.name = "固体史莱姆";
 				}
 				if (eType == 5) {
-					newEnemy.name = "Ghost Slime";
+					newEnemy.name = "幽灵史莱姆";
 				}
 				if (eType == 6) {
-					newEnemy.name = "Armored Slime";
+					newEnemy.name = "装甲史莱姆";
 				}
 				if (eType == 7) {
-					newEnemy.name = "Tough Slime";
+					newEnemy.name = "坚韧的史莱姆";
 				}
 				if (eType == 8) {
-					newEnemy.name = "Vampire Slime";
+					newEnemy.name = "吸血鬼史莱姆";
 				}
 				if (eType == 9) {
-					newEnemy.name = "Mad Slime";
+					newEnemy.name = "疯狂的史莱姆";
 				}
 				if (eType == 10) {
-					newEnemy.name = "Critical Slime";
+					newEnemy.name = "致命的史莱姆";
 				}
 			}
 			else if (eClass == 1) {
 				if (eType == 0) {
-					newEnemy.name = "Dog";
+					newEnemy.name = "狗";
 				}
 				if (eType == 1) {
-					newEnemy.name = "Pig";
+					newEnemy.name = "猪";
 				}
 				if (eType == 2) {
-					newEnemy.name = "Cow";
+					newEnemy.name = "奶牛";
 				}
 				if (eType == 3) {
-					newEnemy.name = "Cat";
+					newEnemy.name = "猫";
 				}
 				if (eType == 4) {
-					newEnemy.name = "Turtle";
+					newEnemy.name = "龟";
 				}
 				if (eType == 5) {
-					newEnemy.name = "Mouse";
+					newEnemy.name = "老鼠";
 				}
 				if (eType == 6) {
-					newEnemy.name = "Water Turtle";
+					newEnemy.name = "水龟";
 				}
 				if (eType == 7) {
-					newEnemy.name = "Hedgehog";
+					newEnemy.name = "刺猬";
 				}
 				if (eType == 8) {
-					newEnemy.name = "Bat";
+					newEnemy.name = "蝙蝠";
 				}
 				if (eType == 9) {
-					newEnemy.name = "Chicken";
+					newEnemy.name = "鸡";
 				}
 				if (eType == 10) {
-					newEnemy.name = "Kurakov";
+					newEnemy.name = "古拉科夫";
 				}
 			}
 		
