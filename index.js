@@ -3583,7 +3583,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,62.9,62.9);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.text = new cjs.Text("HELP?", "bold 9px 'Arial'", "#4C3D00");
+	this.text = new cjs.Text("帮助?", "bold 9px 'Arial'", "#4C3D00");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 38;
