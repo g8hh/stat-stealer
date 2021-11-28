@@ -5702,7 +5702,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.hp_q.setTransform(258.95,31.7,1,1,0,0,0,7.2,7.2);
 	new cjs.ButtonHelper(this.hp_q, 0, 1, 2);
 
-	this.el_text = new cjs.Text("Element: Dark Gas", "bold 14px 'Arial'", "#FFCCFF");
+	this.el_text = new cjs.Text("元素： Dark Gas", "bold 14px 'Arial'", "#FFCCFF");
 	this.el_text.name = "el_text";
 	this.el_text.lineHeight = 18;
 	this.el_text.lineWidth = 203;
@@ -7602,7 +7602,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.speedUP_b.visible = true;
 				this.spdUP.visible = true;
 				this.spdTime.visible = true;
-				this.spdUP.text = "SpeedUP (x2, max 30m)";
+				this.spdUP.text = "加速 (x2, 最多 30分钟)";
 				this.spdTime.text = Math.floor(speedUPtime_ib*10)/10 + "s";
 				
 				if (sActive == true) {
@@ -8323,13 +8323,13 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			}
 			this.the_player.x = 50 + (player.posX - field_move) * 100;
 		
-			this.distance_.text = "Distance: " + Math.round(Math.abs(player.posX) * 10) / 10 + " m";
+			this.distance_.text = "距离: " + Math.round(Math.abs(player.posX) * 10) / 10 + " 米";
 			if (player.posX >= 0) {
-				this.direction_.text = "Direction: East";
+				this.direction_.text = "方向: 东";
 			} else {
-				this.direction_.text = "Direction: West";
+				this.direction_.text = "方向: 西";
 			}
-			this.en_lv_.text = "Enemy Lvls: " + player.posXLv;
+			this.en_lv_.text = "敌人等级: " + player.posXLv;
 			checkBuffs(player);
 		
 		}
@@ -9002,18 +9002,18 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.exportRoot.downUI.Ebonus4_text.visible = true;
 		
 		
-				this.exportRoot.downUI.nameEn.text = enemy.name + " [Lv. " + enemy.level + "]";
-				this.exportRoot.downUI.Ehp_text.text = "Max HP: " + format(enemy.stats[MAXHP].value);
+				this.exportRoot.downUI.nameEn.text = enemy.name + " [等级. " + enemy.level + "]";
+				this.exportRoot.downUI.Ehp_text.text = "最大 HP: " + format(enemy.stats[MAXHP].value);
 				
 				
-				this.exportRoot.downUI.Eatk_text.text = "Attack: " + format(enemy.stats[ATK].value.times(enemy.atMinPow)) + " - " + format(enemy.stats[ATK].value.times(enemy.atMaxPow)) + " (" + Math.round(enemy.stats[ATK].value.times(enemy.dps).div(enemy.stats[ATK].value.times(enemy.dps).plus(player.stats[DEF].value.times(player.baseDef))).times(1000).toNumber())/10 + "%)";
-				this.exportRoot.downUI.Edef_text.text = "Defence: " + format(enemy.stats[DEF].value.times(enemy.baseDef)) + " (" + Math.round(1000 - (player.stats[ATK].value.times(player.dps).div(player.stats[ATK].value.times(player.dps).plus(enemy.stats[DEF].value.times(enemy.baseDef))).times(1000)).toNumber())/10 + "%)";
+				this.exportRoot.downUI.Eatk_text.text = "攻击: " + format(enemy.stats[ATK].value.times(enemy.atMinPow)) + " - " + format(enemy.stats[ATK].value.times(enemy.atMaxPow)) + " (" + Math.round(enemy.stats[ATK].value.times(enemy.dps).div(enemy.stats[ATK].value.times(enemy.dps).plus(player.stats[DEF].value.times(player.baseDef))).times(1000).toNumber())/10 + "%)";
+				this.exportRoot.downUI.Edef_text.text = "防御: " + format(enemy.stats[DEF].value.times(enemy.baseDef)) + " (" + Math.round(1000 - (player.stats[ATK].value.times(player.dps).div(player.stats[ATK].value.times(player.dps).plus(enemy.stats[DEF].value.times(enemy.baseDef))).times(1000)).toNumber())/10 + "%)";
 				
 				
-				this.exportRoot.downUI.Easpd_text.text = "Atk. Speed: " + Math.round(enemy.stats[ASPD].value * 100) / 100 + " sec. (x1)";
-				this.exportRoot.downUI.EHPreg_text.text = "HP Regeneration: " + format(enemy.stats[HPRG].value) + "/s";
-				this.exportRoot.downUI.Eprec_text.text = "Precision: " + format(enemy.stats[PREC].value) + " (" + Math.round(enemy.stats[PREC].value.div(enemy.stats[PREC].value.plus(player.stats[AVOID].value)).times(1000).toNumber())/10 + "% hit ch.)";
-				this.exportRoot.downUI.Eavoid_text.text = "Avoid: " + format(enemy.stats[AVOID].value) + " (" + Math.round(1000 - (player.stats[PREC].value.div(player.stats[PREC].value.plus(enemy.stats[AVOID].value)).times(1000)).toNumber())/10 + "% av. ch.)";
+				this.exportRoot.downUI.Easpd_text.text = "攻击速度: " + Math.round(enemy.stats[ASPD].value * 100) / 100 + " 秒. (x1)";
+				this.exportRoot.downUI.EHPreg_text.text = "HP 回复: " + format(enemy.stats[HPRG].value) + "/秒";
+				this.exportRoot.downUI.Eprec_text.text = "精准: " + format(enemy.stats[PREC].value) + " (" + Math.round(enemy.stats[PREC].value.div(enemy.stats[PREC].value.plus(player.stats[AVOID].value)).times(1000).toNumber())/10 + "% 命中率.)";
+				this.exportRoot.downUI.Eavoid_text.text = "闪避: " + format(enemy.stats[AVOID].value) + " (" + Math.round(1000 - (player.stats[PREC].value.div(player.stats[PREC].value.plus(enemy.stats[AVOID].value)).times(1000)).toNumber())/10 + "% 闪避率.)";
 		
 		
 		
@@ -9230,27 +9230,27 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		function loopPlayer() {
 			if (player.direction == LEFT) {
 				this.setLeft.gotoAndStop(1);
-				this.whereMoving.text = "Moving left";
+				this.whereMoving.text = "左移";
 			} else this.setLeft.gotoAndStop(0);
 		
 			if (player.direction == STAY) {
 				this.setStop.gotoAndStop(1);
-				this.whereMoving.text = "Resting (x10 H.Rg.)";
+				this.whereMoving.text = "休息 (x10 H.Rg.)";
 			} else this.setStop.gotoAndStop(0);
 		
 			if (player.direction == RIGHT) {
 				this.setRight.gotoAndStop(1);
-				this.whereMoving.text = "Moving right";
+				this.whereMoving.text = "右移";
 			} else this.setRight.gotoAndStop(0);
 		
 			if (player.loop == true) {
 				this.setLoop.gotoAndStop(1);
-				this.loopIs.text = "Loop: YES";
+				this.loopIs.text = "循环: 是";
 				this.loopDist.visible = true;
-				this.loopDist.text = "L.Dist: " + Math.round(player.loopD) + " m";
+				this.loopDist.text = "L.距离: " + Math.round(player.loopD) + " 米";
 			} else {
 				this.setLoop.gotoAndStop(0);
-				this.loopIs.text = "Loop: NO";
+				this.loopIs.text = "循环: 否";
 				this.loopDist.visible = false;
 			}
 		
@@ -9488,14 +9488,14 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		
 		this.addEventListener("tick", statsDisplay.bind(this));
 		function statsDisplay() {
-			this.downUI.maxDist_t.text = "Max Distance: " + Math.floor(maxDistance) + " m [Lv. " + maxDLevel + "]";
-			this.downUI.youlv.text = "You [Lv. " + player.level + "]";
+			this.downUI.maxDist_t.text = "最远距离: " + Math.floor(maxDistance) + " 米 [等级. " + maxDLevel + "]";
+			this.downUI.youlv.text = "你 [等级 " + player.level + "]";
 		
-			this.spd.text = "Speed: " + Math.round(player.speed * 1000) / 1000 + "m/s";
+			this.spd.text = "速度: " + Math.round(player.speed * 1000) / 1000 + "米/秒";
 			this.youUI.pi_t.text = "PI: " + format(player.pIndex);
 		
 		
-			this.youUI.name_.text = "Rimuru (You)";
+			this.youUI.name_.text = "利姆鲁 (你)";
 			this.youUI.hp_now.text = format(player.hp) + " / " + format(player.stats[MAXHP].value);
 			this.youUI.mp_now.text = format(player.mp) + " / " + format(player.stats[MANA].value);
 			this.youUI.lv.text = player.level;
@@ -9557,18 +9557,18 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.downUI.int_plus.visible = false;
 			}
 		
-			this.downUI.str_t.text = "STR: " + format(player.stats[STR].value);
-			this.downUI.vit_t.text = "VIT: " + format(player.stats[VIT].value);
-			this.downUI.agi_t.text = "AGI: " + format(player.stats[AGI].value);
-			this.downUI.arm_t.text = "ARM: " + format(player.stats[ARM].value);
-			this.downUI.int_t.text = "INT: " + format(player.stats[INT].value);
+			this.downUI.str_t.text = "力量: " + format(player.stats[STR].value);
+			this.downUI.vit_t.text = "耐力: " + format(player.stats[VIT].value);
+			this.downUI.agi_t.text = "敏捷: " + format(player.stats[AGI].value);
+			this.downUI.arm_t.text = "护甲: " + format(player.stats[ARM].value);
+			this.downUI.int_t.text = "智力: " + format(player.stats[INT].value);
 		
-			this.downUI.cr_ch_t.text = "CRIT Chance: " + format(player.stats[CRIT].value.times(100)) + "% [200%]";
-			this.downUI.mcr_ch_t.text = "MEGACRIT Ch.: " + format(player.stats[MCRIT].value.times(100)) + "% [300%]";
-			this.downUI.scr_ch_t.text = "SUPERCRIT Ch.: " + format(player.stats[SCRIT].value.times(100)) + "% [500%]";
+			this.downUI.cr_ch_t.text = "暴击率: " + format(player.stats[CRIT].value.times(100)) + "% [200%]";
+			this.downUI.mcr_ch_t.text = "高级暴击率: " + format(player.stats[MCRIT].value.times(100)) + "% [300%]";
+			this.downUI.scr_ch_t.text = "超级暴击率: " + format(player.stats[SCRIT].value.times(100)) + "% [500%]";
 		
 		
-			this.downUI.xp_text.text = "XP: " + format(player.xpNow) + " / " + format(player.xpNext) + " (" + format(player.xpNow.div(player.xpNext).times(100)) + "%)";
+			this.downUI.xp_text.text = "经验: " + format(player.xpNow) + " / " + format(player.xpNext) + " (" + format(player.xpNow.div(player.xpNext).times(100)) + "%)";
 		
 			sDisplay(this.downUI.hp_text, MAXHP, player);
 			
@@ -9577,9 +9577,9 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				sDisplay(this.downUI.def_text, DEF, player);
 			}
 			else {
-				this.downUI.atk_text.text = "Attack: " + format(player.stats[ATK].value.times(player.atMinPow)) + " - " + format(player.stats[ATK].value.times(player.atMaxPow)) + " (" + format(player.stats[ATK].value.times(player.dps).div((player.stats[ATK].value.times(player.dps).plus(closestEnemy.stats[DEF].value.times(closestEnemy.baseDef)))).times(100)) + "%)";
+				this.downUI.atk_text.text = "攻击: " + format(player.stats[ATK].value.times(player.atMinPow)) + " - " + format(player.stats[ATK].value.times(player.atMaxPow)) + " (" + format(player.stats[ATK].value.times(player.dps).div((player.stats[ATK].value.times(player.dps).plus(closestEnemy.stats[DEF].value.times(closestEnemy.baseDef)))).times(100)) + "%)";
 				this.downUI.atk_text.color = "#FFCCCC";
-				this.downUI.def_text.text = "Defence: " + format(player.stats[DEF].value.times(player.baseDef)) + " (" + format(nd(100).sub(closestEnemy.stats[ATK].value.times(closestEnemy.dps).div(closestEnemy.stats[ATK].value.times(closestEnemy.dps).plus(player.stats[DEF].value.times(player.baseDef))).times(100))) + "%)";
+				this.downUI.def_text.text = "防御: " + format(player.stats[DEF].value.times(player.baseDef)) + " (" + format(nd(100).sub(closestEnemy.stats[ATK].value.times(closestEnemy.dps).div(closestEnemy.stats[ATK].value.times(closestEnemy.dps).plus(player.stats[DEF].value.times(player.baseDef))).times(100))) + "%)";
 				this.downUI.def_text.color = "#CCEEFF";
 			}
 			
@@ -9605,8 +9605,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			}
 			
 			
-			this.downUI.main_stats.statList.stat3_text.text = "Precision: " + format(player.stats[PREC].value) + " (" + format(player.stats[PREC].value.div(player.stats[PREC].value.plus(closestEnemy.stats[AVOID].value)).times(100)) + "% hit ch.)";
-			this.downUI.main_stats.statList.stat4_text.text = "Avoid: " + format(player.stats[AVOID].value) + " (" + format(nd(100).sub(closestEnemy.stats[PREC].value.div(closestEnemy.stats[PREC].value.plus(player.stats[AVOID].value)).times(100))) + "% av. ch.)";
+			this.downUI.main_stats.statList.stat3_text.text = "精准: " + format(player.stats[PREC].value) + " (" + format(player.stats[PREC].value.div(player.stats[PREC].value.plus(closestEnemy.stats[AVOID].value)).times(100)) + "% 命中率.)";
+			this.downUI.main_stats.statList.stat4_text.text = "闪避: " + format(player.stats[AVOID].value) + " (" + format(nd(100).sub(closestEnemy.stats[PREC].value.div(closestEnemy.stats[PREC].value.plus(player.stats[AVOID].value)).times(100))) + "% 闪避率.)";
 		
 			
 			this.downUI.wep_slot.rarity.gotoAndStop(player.weapon.rarity);
@@ -9908,240 +9908,240 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		
 		function sDisplay(txt, stat, player) {
 			if (stat == STR) {
-				txt.text = "STR: " + format(player.stats[stat].value);
+				txt.text = "力量: " + format(player.stats[stat].value);
 				txt.color = "#FFCCCC";
 			}
 			if (stat == VIT) {
-				txt.text = "VIT: " + format(player.stats[stat].value);
+				txt.text = "耐力: " + format(player.stats[stat].value);
 				txt.color = "#CCFFCC";
 			}
 			if (stat == AGI) {
-				txt.text = "AGI: " + format(player.stats[stat].value);
+				txt.text = "敏捷: " + format(player.stats[stat].value);
 				txt.color = "#FFFFCC";
 			}
 			if (stat == ARM) {
-				txt.text = "ARM: " + format(player.stats[stat].value);
+				txt.text = "护甲: " + format(player.stats[stat].value);
 				txt.color = "#CCEEFF";
 			}
 			if (stat == INT) {
-				txt.text = "INT: " + format(player.stats[stat].value);
+				txt.text = "智力: " + format(player.stats[stat].value);
 				txt.color = "#FFCCFF";
 			}
 		
 			if (stat == CRIT) {
-				txt.text = "CRIT Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "暴击率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == MCRIT) {
-				txt.text = "MEGACRIT Ch.: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "高级暴击率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == SCRIT) {
-				txt.text = "SUPERCRIT Ch.: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "超级暴击率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 		
 			if (stat == MAXHP) {
-				txt.text = "Max HP: " + format(player.stats[stat].value);
+				txt.text = "最大生命值: " + format(player.stats[stat].value);
 				txt.color = "#CCFFCC";
 			}
 			if (stat == ATK) {
-				txt.text = "Attack: " + format(player.stats[stat].value.times(player.atMinPow)) + " - " + format(player.stats[stat].value.times(player.atMaxPow));
+				txt.text = "攻击: " + format(player.stats[stat].value.times(player.atMinPow)) + " - " + format(player.stats[stat].value.times(player.atMaxPow));
 				txt.color = "#FFCCCC";
 			}
 			if (stat == DEF) {
-				txt.text = "Defence: " + format(player.stats[stat].value.times(player.baseDef));
+				txt.text = "防御: " + format(player.stats[stat].value.times(player.baseDef));
 				txt.color = "#CCEEFF";
 			}
 			if (stat == ASPD) {
-				txt.text = "Atk. Speed: " + Math.round(player.stats[stat].value * 1000) / 1000 + " sec. (x1)";
+				txt.text = "攻击速度: " + Math.round(player.stats[stat].value * 1000) / 1000 + " sec. (x1)";
 				txt.color = "#FFFFCC";
 			}
 			if (stat == MANA) {
-				txt.text = "Max Mana: " + format(player.stats[stat].value);
+				txt.text = "最大法力: " + format(player.stats[stat].value);
 				txt.color = "#FFCCFF";
 			}
 			if (stat == MATK) {
-				txt.text = "M.Atk.: " + format(player.stats[stat].value.times(player.atMinPow)) + " - " + format(player.stats[stat].value.times(player.atMaxPow));
+				txt.text = "最大攻击: " + format(player.stats[stat].value.times(player.atMinPow)) + " - " + format(player.stats[stat].value.times(player.atMaxPow));
 				txt.color = "#FFCCFF";
 			}
 			if (stat == ELEM) {
 				setElements(txt, stat);
 			}
 			if (stat == HPRG) {
-				txt.text = "HP Regeneration: " + format(player.stats[stat].value) + "/s";
+				txt.text = "生命值回复: " + format(player.stats[stat].value) + "/s";
 				txt.color = "#CCFFCC";
 			}
 			if (stat == MPRG) {
-				txt.text = "MP Regeneration: " + format(player.stats[stat].value) + "/s";
+				txt.text = "法力值回复: " + format(player.stats[stat].value) + "/s";
 				txt.color = "#FFCCFF";
 			}
 			if (stat == MCON) {
-				txt.text = "Mana Consumption: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "法力消耗: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFCCFF";
 			}
 			if (stat == PREC) {
-				txt.text = "Precision: " + format(player.stats[stat].value);
+				txt.text = "精准: " + format(player.stats[stat].value);
 				txt.color = "#FFFFCC";
 			}
 			if (stat == AVOID) {
-				txt.text = "Avoid: " + format(player.stats[stat].value);
+				txt.text = "闪避: " + format(player.stats[stat].value);
 				txt.color = "#FFFFCC";
 			}
 			if (stat == PENETR) {
-				txt.text = "Penetration: " + format(player.stats[stat].value);
+				txt.text = "穿透: " + format(player.stats[stat].value);
 				txt.color = "#FFFFFF";
 			}
 			if (stat == BLCH) {
-				txt.text = "Block Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "格挡率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == BLAM) {
-				txt.text = "Block Amount: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "格挡次数: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == BLEED) {
-				txt.text = "Bleed Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "流血几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == LFSTL) {
-				txt.text = "Lifesteal: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "生命偷取: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == RGCH) {
-				txt.text = "Rage Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "狂暴几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == RGPOW) {
-				txt.text = "Rage Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "狂暴力量: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == RGDUR) {
-				txt.text = "Rage Duration: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "狂暴持续时间: " + format(player.stats[stat].value) + " sec.";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == INTER) {
-				txt.text = "Interrupt Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "打断几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat == BURNCH) {
-				txt.text = "Burn Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "燃烧几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FF6600";
 			}
 			if (stat == BURNPOW) {
-				txt.text = "Burn Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "燃烧力量: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FF6600";
 			}
 			if (stat == BURNDUR) {
-				txt.text = "Burn Duration: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "燃烧持续时间: " + format(player.stats[stat].value) + " sec.";
 				txt.color = "#FF6600";
 			}
 			if (stat == SLOWCH) {
-				txt.text = "Slow Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "减速几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#0099CC";
 			}
 			if (stat == SLOWPOW) {
-				txt.text = "Slow Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "减速几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#0099CC";
 			}
 			if (stat == SLOWDUR) {
-				txt.text = "Slow Duration: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "减速持续时间: " + format(player.stats[stat].value) + " sec.";
 				txt.color = "#0099CC";
 			}
 			if (stat == DOUBLECH) {
-				txt.text = "Double Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "连击2次几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#8FD9D9";
 			}
 			if (stat == TRIPLECH) {
-				txt.text = "Triple Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "连击3次几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#8FD9D9";
 			}
 			if (stat == QUADCH) {
-				txt.text = "Quadriple Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "连击4次几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#8FD9D9";
 			}
 			if (stat == STUNCH) {
-				txt.text = "Stun Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "眩晕几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#AC6A28";
 			}
 			if (stat == STUNDMG) {
-				txt.text = "Stun Damage: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "眩晕伤害: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#AC6A28";
 			}
 			if (stat == STUNDUR) {
-				txt.text = "Stun Duration: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "眩晕持续时间: " + format(player.stats[stat].value) + " sec.";
 				txt.color = "#AC6A28";
 			}
 			if (stat == BLINDCH) {
-				txt.text = "Blind Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "失明几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#94A5B4";
 			}
 			if (stat == BLINDDECR) {
-				txt.text = "Blind Prec. Decrease: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "失明预判降低: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#94A5B4";
 			}
 			if (stat == EXPLCH) {
-				txt.text = "Explosion Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "爆炸几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#666699";
 			}
 			if (stat == EXPLPOW) {
-				txt.text = "Explosion Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "爆炸力量: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#666699";
 			}
 			if (stat == EXPLAM) {
-				txt.text = "Explosion Burn Amount: " + format(player.stats[stat].value.times(100));
+				txt.text = "爆炸燃烧量: " + format(player.stats[stat].value.times(100));
 				txt.color = "#666699";
 			}
 			if (stat == HEAT) {
-				txt.text = "Heat Power: " + format(player.stats[stat].value) + " dmg/sec.";
+				txt.text = "燃烧力量: " + format(player.stats[stat].value) + " dmg/sec.";
 				txt.color = "#FF0000";
 			}
 			if (stat == FRZCH) {
-				txt.text = "Freeze Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "冻结几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#33FFFF";
 			}
 			if (stat == FRZDUR) {
-				txt.text = "Freeze Duration: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "冻结时间: " + format(player.stats[stat].value) + " sec.";
 				txt.color = "#33FFFF";
 			}
 			if (stat == POSCH) {
-				txt.text = "Poison Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "中毒几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#66FF00";
 			}
 			if (stat == POSPOW) {
-				txt.text = "Poison Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "中毒力量: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#66FF00";
 			}
 			if (stat == POSDUR) {
-				txt.text = "Poison Duration: " + format(player.stats[stat].value) + " sec.";
+				txt.text = "中毒持续时间: " + format(player.stats[stat].value) + " sec.";
 				txt.color = "#66FF00";
 			}
 			if (stat == SANDCH) {
-				txt.text = "Sandstorm Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "沙尘暴几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFCC66";
 			}
 			if (stat == SANDDMG) {
-				txt.text = "Sandstorm Damage: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "沙尘暴伤害: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFCC66";
 			}
 			if (stat == SANDPOW) {
-				txt.text = "Sandstorm Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "沙尘暴力量: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFCC66";
 			}
 			if (stat == LSWCH) {
-				txt.text = "Light Swords Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "光剑几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFCC";
 			}
 			if (stat == LSWPOW) {
-				txt.text = "Light Swords Damage: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "光剑伤害: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#FFFFCC";
 			}
 			if (stat == WEAKCH) {
-				txt.text = "Weaken Chance: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "虚弱几率: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#000044";
 			}
 			if (stat == WEAKPOW) {
-				txt.text = "Weaken Power: " + format(player.stats[stat].value.times(100)) + "%";
+				txt.text = "虚弱力量: " + format(player.stats[stat].value.times(100)) + "%";
 				txt.color = "#000044";
 			}
 		}
@@ -10152,237 +10152,237 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		
 		function sDisplay2(txt, stat) {
 			if (stat.type == STR) {
-				txt.text = "STR: " + format(stat.value);
+				txt.text = "力量: " + format(stat.value);
 				txt.color = "#FFCCCC";
 			}
 			if (stat.type == VIT) {
-				txt.text = "VIT: " + format(stat.value);
+				txt.text = "精准: " + format(stat.value);
 				txt.color = "#CCFFCC";
 			}
 			if (stat.type == AGI) {
-				txt.text = "AGI: " + format(stat.value);
+				txt.text = "闪避: " + format(stat.value);
 				txt.color = "#FFFFCC";
 			}
 			if (stat.type == ARM) {
-				txt.text = "ARM: " + format(stat.value);
+				txt.text = "护甲: " + format(stat.value);
 				txt.color = "#CCEEFF";
 			}
 			if (stat.type == INT) {
-				txt.text = "INT: " + format(stat.value);
+				txt.text = "智力: " + format(stat.value);
 				txt.color = "#FFCCFF";
 			}
 		
 			if (stat.type == CRIT) {
-				txt.text = "CRIT Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "暴击率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == MCRIT) {
-				txt.text = "MEGACRIT Ch.: " + format(stat.value.times(100)) + "%";
+				txt.text = "高级暴击率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == SCRIT) {
-				txt.text = "SUPERCRIT Ch.: " + format(stat.value.times(100)) + "%";
+				txt.text = "超级暴击率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 		
 			if (stat.type == MAXHP) {
-				txt.text = "Max HP: " + format(stat.value);
+				txt.text = "最大生命值: " + format(stat.value);
 				txt.color = "#CCFFCC";
 			}
 			if (stat.type == ATK) {
-				txt.text = "Attack: " + format(stat.value);
+				txt.text = "攻击: " + format(stat.value);
 				txt.color = "#FFCCCC";
 			}
 			if (stat.type == DEF) {
-				txt.text = "Defence: " + format(stat.value);
+				txt.text = "防御: " + format(stat.value);
 				txt.color = "#CCEEFF";
 			}
 			if (stat.type == ASPD) {
-				txt.text = "Atk. Speed: x" + short(stat.value * 100) + "%";
+				txt.text = "攻击速度: x" + short(stat.value * 100) + "%";
 				txt.color = "#FFFFCC";
 			}
 			if (stat.type == MANA) {
-				txt.text = "Max Mana: " + format(stat.value);
+				txt.text = "最大法力: " + format(stat.value);
 				txt.color = "#FFCCFF";
 			}
 			if (stat.type == MATK) {
-				txt.text = "M.Atk.: " + format(stat.value);
+				txt.text = "法术攻击: " + format(stat.value);
 				txt.color = "#FFCCFF";
 			}
 			if (stat.type == HPRG) {
-				txt.text = "HP Regeneration: " + format(stat.value) + "/s";
+				txt.text = "生命值回复: " + format(stat.value) + "/s";
 				txt.color = "#CCFFCC";
 			}
 			if (stat.type == MPRG) {
-				txt.text = "MP Regeneration: " + format(stat.value) + "/s";
+				txt.text = "法力回复: " + format(stat.value) + "/s";
 				txt.color = "#FFCCFF";
 			}
 			if (stat.type == MCON) {
-				txt.text = "Mana Consumption: x" + format(stat.value.times(100)) + "%";
+				txt.text = "法力消耗: x" + format(stat.value.times(100)) + "%";
 				txt.color = "#FFCCFF";
 			}
 			if (stat.type == PREC) {
-				txt.text = "Precision: " + format(stat.value);
+				txt.text = "精准: " + format(stat.value);
 				txt.color = "#FFFFCC";
 			}
 			if (stat.type == AVOID) {
-				txt.text = "Avoid: " + format(stat.value);
+				txt.text = "闪避: " + format(stat.value);
 				txt.color = "#FFFFCC";
 			}
 			if (stat.type == PENETR) {
-				txt.text = "Penetration: " + format(stat.value);
+				txt.text = "穿透: " + format(stat.value);
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == BLCH) {
-				txt.text = "Block Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "格挡几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == BLAM) {
-				txt.text = "Block Amount: " + format(stat.value.times(100)) + "%";
+				txt.text = "格挡次数: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == BLEED) {
-				txt.text = "Bleed Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "流血几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == LFSTL) {
-				txt.text = "Lifesteal: " + format(stat.value.times(100)) + "%";
+				txt.text = "生命偷取: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == RGCH) {
-				txt.text = "Rage Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "狂暴几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == RGPOW) {
-				txt.text = "Rage Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "狂暴力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == RGDUR) {
-				txt.text = "Rage Duration: " + format(stat.value) + " sec.";
+				txt.text = "狂暴持续时间: " + format(stat.value) + " sec.";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == INTER) {
-				txt.text = "Interrupt Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "打断几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFFF";
 			}
 			if (stat.type == BURNCH) {
-				txt.text = "Burn Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "燃烧几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FF6600";
 			}
 			if (stat.type == BURNPOW) {
-				txt.text = "Burn Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "燃烧力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FF6600";
 			}
 			if (stat.type == BURNDUR) {
-				txt.text = "Burn Duration: " + format(stat.value) + " sec.";
+				txt.text = "燃烧持续时间: " + format(stat.value) + " sec.";
 				txt.color = "#FF6600";
 			}
 			if (stat.type == SLOWCH) {
-				txt.text = "Slow Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "减速几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#0099CC";
 			}
 			if (stat.type == SLOWPOW) {
-				txt.text = "Slow Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "减速力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#0099CC";
 			}
 			if (stat.type == SLOWDUR) {
-				txt.text = "Slow Duration: " + format(stat.value) + " sec.";
+				txt.text = "减速持续时长: " + format(stat.value) + " sec.";
 				txt.color = "#0099CC";
 			}
 			if (stat.type == DOUBLECH) {
-				txt.text = "Double Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "连击2次几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#8FD9D9";
 			}
 			if (stat.type == TRIPLECH) {
-				txt.text = "Triple Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "连击3次几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#8FD9D9";
 			}
 			if (stat.type == QUADCH) {
-				txt.text = "Quadriple Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "连击4次几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#8FD9D9";
 			}
 			if (stat.type == STUNCH) {
-				txt.text = "Stun Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "眩晕几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#AC6A28";
 			}
 			if (stat.type == STUNDMG) {
-				txt.text = "Stun Damage: " + format(stat.value.times(100)) + "%";
+				txt.text = "眩晕伤害: " + format(stat.value.times(100)) + "%";
 				txt.color = "#AC6A28";
 			}
 			if (stat.type == STUNDUR) {
-				txt.text = "Stun Duration: " + format(stat.value) + " sec.";
+				txt.text = "眩晕持续时长: " + format(stat.value) + " sec.";
 				txt.color = "#AC6A28";
 			}
 			if (stat.type == BLINDCH) {
-				txt.text = "Blind Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "失明几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#94A5B4";
 			}
 			if (stat.type == BLINDDECR) {
-				txt.text = "Blind Prec. Decrease: " + format(stat.value.times(100)) + "%";
+				txt.text = "失明预判减低: " + format(stat.value.times(100)) + "%";
 				txt.color = "#94A5B4";
 			}
 			if (stat.type == EXPLCH) {
-				txt.text = "Explosion Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "爆炸几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#666699";
 			}
 			if (stat.type == EXPLPOW) {
-				txt.text = "Explosion Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "爆炸力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#666699";
 			}
 			if (stat.type == EXPLAM) {
-				txt.text = "Explosion Burn Amount: " + format(stat.value);
+				txt.text = "爆炸燃烧量: " + format(stat.value);
 				txt.color = "#666699";
 			}
 			if (stat.type == HEAT) {
-				txt.text = "Heat Power: " + format(stat.value) + " dmg/sec.";
+				txt.text = "热力量: " + format(stat.value) + " dmg/sec.";
 				txt.color = "#FF0000";
 			}
 			if (stat.type == FRZCH) {
-				txt.text = "Freeze Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "冻结几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#33FFFF";
 			}
 			if (stat.type == FRZDUR) {
-				txt.text = "Freeze Duration: " + format(stat.value) + " sec.";
+				txt.text = "冻结持续时间: " + format(stat.value) + " sec.";
 				txt.color = "#33FFFF";
 			}
 			if (stat.type == POSCH) {
-				txt.text = "Poison Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "中毒几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#66FF00";
 			}
 			if (stat.type == POSPOW) {
-				txt.text = "Poison Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "中毒力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#66FF00";
 			}
 			if (stat.type == POSDUR) {
-				txt.text = "Poison Duration: " + format(stat.value) + " sec.";
+				txt.text = "中毒持续时长: " + format(stat.value) + " sec.";
 				txt.color = "#66FF00";
 			}
 			if (stat.type == SANDCH) {
-				txt.text = "Sandstorm Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "沙尘暴几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFCC66";
 			}
 			if (stat.type == SANDDMG) {
-				txt.text = "Sandstorm Damage: " + format(stat.value.times(100)) + "%";
+				txt.text = "沙尘暴伤害: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFCC66";
 			}
 			if (stat.type == SANDPOW) {
-				txt.text = "Sandstorm Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "沙尘暴力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFCC66";
 			}
 			if (stat.type == LSWCH) {
-				txt.text = "Light Swords Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "光剑几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFCC";
 			}
 			if (stat.type == LSWPOW) {
-				txt.text = "Light Swords Damage: " + format(stat.value.times(100)) + "%";
+				txt.text = "光剑伤害: " + format(stat.value.times(100)) + "%";
 				txt.color = "#FFFFCC";
 			}
 			if (stat.type == WEAKCH) {
-				txt.text = "Weaken Chance: " + format(stat.value.times(100)) + "%";
+				txt.text = "虚弱几率: " + format(stat.value.times(100)) + "%";
 				txt.color = "#000044";
 			}
 			if (stat.type == WEAKPOW) {
-				txt.text = "Weaken Power: " + format(stat.value.times(100)) + "%";
+				txt.text = "虚弱力量: " + format(stat.value.times(100)) + "%";
 				txt.color = "#000044";
 			}
 		}
@@ -10395,111 +10395,111 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		
 		function setElements(txt, stat) {
 			if (player.stats[stat].value == NONE) {
-				txt.text = "Element: None";
+				txt.text = "元素： 无";
 				txt.color = "#999999";
 			}
 			if (player.stats[stat].value == FIRE) {
-				txt.text = "Element: Fire";
+				txt.text = "元素： 火";
 				txt.color = "#FF6600";
 			}
 			if (player.stats[stat].value == WATER) {
-				txt.text = "Element: Water";
+				txt.text = "元素： 水";
 				txt.color = "#0099CC";
 			}
 			if (player.stats[stat].value == EARTH) {
-				txt.text = "Element: Earth";
+				txt.text = "元素： 地";
 				txt.color = "#AC6A28";
 			}
 			if (player.stats[stat].value == WIND) {
-				txt.text = "Element: Wind";
+				txt.text = "元素： 风";
 				txt.color = "#8FD9D9";
 			}
 		
 		
 			if (player.stats[stat].value == STEAM) {
-				txt.text = "Element: Steam";
+				txt.text = "元素： Steam";
 				txt.color = "#94A5B4";
 			}
 			if (player.stats[stat].value == LAVA) {
-				txt.text = "Element: Lava";
+				txt.text = "元素： Lava";
 				txt.color = "#FF0000";
 			}
 			if (player.stats[stat].value == GAS) {
-				txt.text = "Element: Gas";
+				txt.text = "元素： Gas";
 				txt.color = "#666699";
 			}
 			if (player.stats[stat].value == POISON) {
-				txt.text = "Element: Poison";
+				txt.text = "元素： Poison";
 				txt.color = "#66FF00";
 			}
 			if (player.stats[stat].value == ICE) {
-				txt.text = "Element: Ice";
+				txt.text = "元素： Ice";
 				txt.color = "#33FFFF";
 			}
 			if (player.stats[stat].value == SAND) {
-				txt.text = "Element: Sand";
+				txt.text = "元素： Sand";
 				txt.color = "#FFCC66";
 			}
 		
 		
 			if (player.stats[stat].value == DARK) {
-				txt.text = "Element: Dark";
+				txt.text = "元素： 暗";
 				txt.color = "#000000";
 			}
 			if (player.stats[stat].value == LIGHTE) {
-				txt.text = "Element: Light";
+				txt.text = "元素： 光";
 				txt.color = "#FFFFCC";
 			}
 		
 		
 			if (player.stats[stat].value == D_STEAM) {
-				txt.text = "Element: Dark Steam";
+				txt.text = "元素： Dark Steam";
 				txt.color = "#304050";
 			}
 			if (player.stats[stat].value == D_LAVA) {
-				txt.text = "Element: Dark Lava";
+				txt.text = "元素： Dark Lava";
 				txt.color = "#660000";
 			}
 			if (player.stats[stat].value == D_GAS) {
-				txt.text = "Element: Dark Gas";
+				txt.text = "元素： Dark Gas";
 				txt.color = "#000033";
 			}
 			if (player.stats[stat].value == D_POISON) {
-				txt.text = "Element: Dark Poison";
+				txt.text = "元素： Dark Poison";
 				txt.color = "#006600";
 			}
 			if (player.stats[stat].value == D_ICE) {
-				txt.text = "Element: Dark Ice";
+				txt.text = "元素： Dark Ice";
 				txt.color = "#006666";
 			}
 			if (player.stats[stat].value == D_SAND) {
-				txt.text = "Element: Dark Sand";
+				txt.text = "元素： Dark Sand";
 				txt.color = "#663300";
 			}
 		
 		
 			if (player.stats[stat].value == L_STEAM) {
-				txt.text = "Element: Light Steam";
+				txt.text = "元素： Light Steam";
 				txt.color = "#FAFBFA";
 			}
 			if (player.stats[stat].value == L_LAVA) {
-				txt.text = "Element: Light Lava";
+				txt.text = "元素： Light Lava";
 				txt.color = "#FF7777";
 			}
 			if (player.stats[stat].value == L_GAS) {
-				txt.text = "Element: Light Gas";
+				txt.text = "元素： Light Gas";
 				txt.color = "#CCCCFF";
 			}
 			if (player.stats[stat].value == L_POISON) {
-				txt.text = "Element: Light Poison";
+				txt.text = "元素： Light Poison";
 				txt.color = "#CCFF66";
 			}
 			if (player.stats[stat].value == L_ICE) {
-				txt.text = "Element: Light Ice";
+				txt.text = "元素： Light Ice";
 				txt.color = "#99FFFF";
 			}
 			if (player.stats[stat].value == L_SAND) {
-				txt.text = "Element: Light Sand";
+				txt.text = "元素: 光 沙";
 				txt.color = "#FFFFCC";
 			}
 		}
@@ -11409,48 +11409,48 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			if (cell < 45) {
 				this.exportRoot.invHover.namee.text = inventory[cell].eq.name;
 				if (inventory[cell].eq.rarity == TRASH) {
-					this.exportRoot.invHover.rarity.text = "Trash";
+					this.exportRoot.invHover.rarity.text = "垃圾";
 					this.exportRoot.invHover.rarity.color = "#999999";
 				}
 				else if (inventory[cell].eq.rarity == COMMON) {
-					this.exportRoot.invHover.rarity.text = "Common";
+					this.exportRoot.invHover.rarity.text = "普通";
 					this.exportRoot.invHover.rarity.color = "#FFFFFF";
 				}
 				else if (inventory[cell].eq.rarity == UNCOMMON) {
-					this.exportRoot.invHover.rarity.text = "Uncommon";
+					this.exportRoot.invHover.rarity.text = "罕见";
 					this.exportRoot.invHover.rarity.color = "#66CC66";
 				}
 				else if (inventory[cell].eq.rarity == RARE) {
-					this.exportRoot.invHover.rarity.text = "Rare";
+					this.exportRoot.invHover.rarity.text = "稀有";
 					this.exportRoot.invHover.rarity.color = "#0066FF";
 				}
 				else if (inventory[cell].eq.rarity == EPIC) {
-					this.exportRoot.invHover.rarity.text = "Epic";
+					this.exportRoot.invHover.rarity.text = "史诗";
 					this.exportRoot.invHover.rarity.color = "#CC00CC";
 				}
 				else if (inventory[cell].eq.rarity == LEGENDARY) {
-					this.exportRoot.invHover.rarity.text = "Legendary";
+					this.exportRoot.invHover.rarity.text = "传奇";
 					this.exportRoot.invHover.rarity.color = "#FF9933";
 				}
 				else if (inventory[cell].eq.rarity == MYTHICAL) {
-					this.exportRoot.invHover.rarity.text = "Mythical";
+					this.exportRoot.invHover.rarity.text = "神话";
 					this.exportRoot.invHover.rarity.color = "#FF3333";
 				}
 				else if (inventory[cell].eq.rarity == GODLY) {
-					this.exportRoot.invHover.rarity.text = "Godly";
+					this.exportRoot.invHover.rarity.text = "神圣的";
 					this.exportRoot.invHover.rarity.color = "#FFFF66";
 				}
-				this.exportRoot.invHover.level.text = "Level " + inventory[cell].eq.level;
+				this.exportRoot.invHover.level.text = "等级 " + inventory[cell].eq.level;
 				
 				if (inventory[cell].isWeapon) {
-					this.exportRoot.invHover.baseDMG.text = "Base Damage";
+					this.exportRoot.invHover.baseDMG.text = "基础伤害";
 					this.exportRoot.invHover.DMG.text = format(inventory[cell].eq.dps);
-					this.exportRoot.invHover.bonus1.text = "Attack Speed: " + format(inventory[cell].eq.aspBase) + "s";
+					this.exportRoot.invHover.bonus1.text = "攻击速度: " + format(inventory[cell].eq.aspBase) + "s";
 				}
 				else {
-					this.exportRoot.invHover.baseDMG.text = "Base Armor";
+					this.exportRoot.invHover.baseDMG.text = "基础护甲";
 					this.exportRoot.invHover.DMG.text = format(inventory[cell].eq.defMult);
-					this.exportRoot.invHover.bonus1.text = "Move Speed: " + Math.round(inventory[cell].eq.baseSpeed * 100)/100;
+					this.exportRoot.invHover.bonus1.text = "移动速度: " + Math.round(inventory[cell].eq.baseSpeed * 100)/100;
 				}
 				if (inventory[cell].eq.dop_stats >= 1) {
 					this.exportRoot.invHover.bonus2.visible = true;
@@ -11491,42 +11491,42 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			if (cell == 45) {
 				this.exportRoot.invHover.namee.text = player.weapon.name;
 				if (player.weapon.rarity == TRASH) {
-					this.exportRoot.invHover.rarity.text = "Trash";
+					this.exportRoot.invHover.rarity.text = "垃圾";
 					this.exportRoot.invHover.rarity.color = "#999999";
 				}
 				else if (player.weapon.rarity == COMMON) {
-					this.exportRoot.invHover.rarity.text = "Common";
+					this.exportRoot.invHover.rarity.text = "普通";
 					this.exportRoot.invHover.rarity.color = "#FFFFFF";
 				}
 				else if (player.weapon.rarity == UNCOMMON) {
-					this.exportRoot.invHover.rarity.text = "Uncommon";
+					this.exportRoot.invHover.rarity.text = "罕见";
 					this.exportRoot.invHover.rarity.color = "#66CC66";
 				}
 				else if (player.weapon.rarity == RARE) {
-					this.exportRoot.invHover.rarity.text = "Rare";
+					this.exportRoot.invHover.rarity.text = "稀有";
 					this.exportRoot.invHover.rarity.color = "#0066FF";
 				}
 				else if (player.weapon.rarity == EPIC) {
-					this.exportRoot.invHover.rarity.text = "Epic";
+					this.exportRoot.invHover.rarity.text = "史诗";
 					this.exportRoot.invHover.rarity.color = "#CC00CC";
 				}
 				else if (player.weapon.rarity == LEGENDARY) {
-					this.exportRoot.invHover.rarity.text = "Legendary";
+					this.exportRoot.invHover.rarity.text = "传奇";
 					this.exportRoot.invHover.rarity.color = "#FF9933";
 				}
 				else if (player.weapon.rarity == MYTHICAL) {
-					this.exportRoot.invHover.rarity.text = "Mythical";
+					this.exportRoot.invHover.rarity.text = "神话";
 					this.exportRoot.invHover.rarity.color = "#FF3333";
 				}
 				else if (player.weapon.rarity == GODLY) {
-					this.exportRoot.invHover.rarity.text = "Godly";
+					this.exportRoot.invHover.rarity.text = "神圣的";
 					this.exportRoot.invHover.rarity.color = "#FFFF66";
 				}
-				this.exportRoot.invHover.level.text = "Level " + player.weapon.level;
+				this.exportRoot.invHover.level.text = "等级 " + player.weapon.level;
 				
-				this.exportRoot.invHover.baseDMG.text = "Base Damage";
+				this.exportRoot.invHover.baseDMG.text = "基础伤害";
 				this.exportRoot.invHover.DMG.text = format(player.weapon.dps);
-				this.exportRoot.invHover.bonus1.text = "Attack Speed: " + format(player.weapon.aspBase) + "s";
+				this.exportRoot.invHover.bonus1.text = "攻击速度: " + format(player.weapon.aspBase) + "s";
 		
 				if (player.weapon.dop_stats >= 1) {
 					this.exportRoot.invHover.bonus2.visible = true;
@@ -12275,16 +12275,16 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		
 		function setStatShow(stat) {
 			if (stat == 20) {
-				this.exportRoot.statHover.stat_name.text = "Penetration";
-				this.exportRoot.statHover.stat_desc.text = "Amount of enemy's defence you penetrate";
+				this.exportRoot.statHover.stat_name.text = "穿透";
+				this.exportRoot.statHover.stat_desc.text = "你穿透的敌人防御量";
 			}
 			else if (stat == 21) {
-				this.exportRoot.statHover.stat_name.text = "Block Chance";
-				this.exportRoot.statHover.stat_desc.text = "Your chance to block an attack";
+				this.exportRoot.statHover.stat_name.text = "格挡几率";
+				this.exportRoot.statHover.stat_desc.text = "你阻止攻击的机会";
 			}
 			else if (stat == 22) {
-				this.exportRoot.statHover.stat_name.text = "Block Amount";
-				this.exportRoot.statHover.stat_desc.text = "Percentage of damage you block after successful block";
+				this.exportRoot.statHover.stat_name.text = "格挡数量";
+				this.exportRoot.statHover.stat_desc.text = "成功格挡后你格挡的伤害百分比";
 			}
 			else if (stat == 23) {
 				this.exportRoot.statHover.stat_name.text = "Bleed Chance";
@@ -12303,12 +12303,12 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.exportRoot.statHover.stat_desc.text = "Your rage buff power";
 			}
 			else if (stat == 27) {
-				this.exportRoot.statHover.stat_name.text = "Rage Duration";
-				this.exportRoot.statHover.stat_desc.text = "Duration of your rage buff";
+				this.exportRoot.statHover.stat_name.text = "狂暴持续时间";
+				this.exportRoot.statHover.stat_desc.text = "狂暴增益的持续时间";
 			}
 			else if (stat == 28) {
-				this.exportRoot.statHover.stat_name.text = "Interrupt Chance";
-				this.exportRoot.statHover.stat_desc.text = "Chance that when attacking you will interrupt the enemy's attack process";
+				this.exportRoot.statHover.stat_name.text = "打断几率";
+				this.exportRoot.statHover.stat_desc.text = "攻击时有几率打断敌人的攻击过程";
 			}
 		}
 		
@@ -12339,16 +12339,16 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			
 			
 			if (eTypes == 0) {
-				this.eType.text = "Mixed Enemies";
+				this.eType.text = "混合敌人";
 			}
 			else if (eTypes == 1) {
-				this.eType.text = "Slimes Only";
+				this.eType.text = "仅史莱姆";
 			}
 			else if (eTypes == 2) {
-				this.eType.text = "Animals Only";
+				this.eType.text = "仅动物";
 			}
 			else if (eTypes == 3) {
-				this.eType.text = "Humanoids Only";
+				this.eType.text = "仅人型";
 			}
 			
 			
@@ -12504,7 +12504,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		    fps = 30;
 			fps2 = 30;
 			this.helpSplash.alpha = 1;
-			this.helpSplash.text = "Here was an error with an ad but anyway here is 1.5 mins of bonus time for you ;)";
+			this.helpSplash.text = "这是一个广告错误，但无论如何这里有 1.5 分钟的奖励时间给你 ;)";
 			speedUPtime_ib += 90;
 			respawn = 300;
 		}
@@ -12513,7 +12513,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		    fps = 30;
 			fps2 = 30;
 			this.helpSplash.alpha = 1;
-			this.helpSplash.text = "Thanks very much for watching. Here is your bonus 5 mins!";
+			this.helpSplash.text = "非常感谢观看。 这是您的奖金 5 分钟！";
 			speedUPtime_ib += 300;
 			respawn = 300;
 		}
@@ -12563,7 +12563,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				pushItem(new weapon(player.level, rarity, weight, Math.floor(player.level / 5), 0), 1);
 			}
 			
-			this.helpSplash.text = "U got cool gear";
+			this.helpSplash.text = "你得到了很酷的装备";
 		}
 		
 		
