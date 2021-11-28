@@ -2213,77 +2213,77 @@ p.nominalBounds = new cjs.Rectangle(0,0,98,8);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.text = new cjs.Text("U", "bold 12px 'Arial'");
+	this.text = new cjs.Text("你", "bold 12px 'Arial'");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 15;
 	this.text.lineWidth = 17;
 	this.text.parent = this;
 	this.text.setTransform(135.3,212.1,2.0284,2.0284);
 
-	this.text_1 = new cjs.Text("Here are your skills. More skills in future updates!", "bold 12px 'Arial'");
+	this.text_1 = new cjs.Text("这是你的技能。 更多技能在未来的更新中！", "bold 12px 'Arial'");
 	this.text_1.textAlign = "center";
 	this.text_1.lineHeight = 15;
 	this.text_1.lineWidth = 152;
 	this.text_1.parent = this;
 	this.text_1.setTransform(792.8,658.85);
 
-	this.text_2 = new cjs.Text("Your inventory. Here you can equip or absorb an item. Absorb -> lose item and get a % of it's stats. Strong gear will help you defeat stronger enemies.\nDouble click to equip or absorb item", "bold 12px 'Arial'");
+	this.text_2 = new cjs.Text("您的库存。 在这里你可以装备或吸收一个物品。 吸收 -> 丢失物品并获得其统计数据的百分比。 强大的装备将帮助您击败更强大的敌人。\n双击以装备或吸收物品", "bold 12px 'Arial'");
 	this.text_2.textAlign = "center";
 	this.text_2.lineHeight = 15;
 	this.text_2.lineWidth = 231;
 	this.text_2.parent = this;
 	this.text_2.setTransform(959.1,447.45,1.155,1.155);
 
-	this.text_3 = new cjs.Text("Defeat enemies, get their stats and XP, level up", "bold 12px 'Arial'");
+	this.text_3 = new cjs.Text("击败敌人，获得他们的属性和 经验，升级", "bold 12px 'Arial'");
 	this.text_3.textAlign = "center";
 	this.text_3.lineHeight = 15;
 	this.text_3.lineWidth = 167;
 	this.text_3.parent = this;
 	this.text_3.setTransform(877,345.4,1.3374,1.3374);
 
-	this.text_4 = new cjs.Text("Your gear", "bold 12px 'Arial'");
+	this.text_4 = new cjs.Text("你的装备", "bold 12px 'Arial'");
 	this.text_4.textAlign = "center";
 	this.text_4.lineHeight = 15;
 	this.text_4.lineWidth = 100;
 	this.text_4.parent = this;
 	this.text_4.setTransform(110.05,713.8,1.6231,1.6231);
 
-	this.text_5 = new cjs.Text("Use your Stat Pts to make u stronger", "bold 16px 'Arial'");
+	this.text_5 = new cjs.Text("使用你的 属性点 让你变得更强大", "bold 16px 'Arial'");
 	this.text_5.textAlign = "center";
 	this.text_5.lineHeight = 20;
 	this.text_5.lineWidth = 154;
 	this.text_5.parent = this;
 	this.text_5.setTransform(111.35,554.4);
 
-	this.text_6 = new cjs.Text("Your stats. Here you can see what each stat do", "bold 16px 'Arial'");
+	this.text_6 = new cjs.Text("你的属性。 在这里你可以看到每个属性的作用", "bold 16px 'Arial'");
 	this.text_6.textAlign = "center";
 	this.text_6.lineHeight = 20;
 	this.text_6.lineWidth = 191;
 	this.text_6.parent = this;
 	this.text_6.setTransform(320.35,350.15);
 
-	this.text_7 = new cjs.Text("Play more games here!", "bold 12px 'Arial'");
+	this.text_7 = new cjs.Text("在这里玩更多游戏！", "bold 12px 'Arial'");
 	this.text_7.textAlign = "center";
 	this.text_7.lineHeight = 15;
 	this.text_7.lineWidth = 100;
 	this.text_7.parent = this;
 	this.text_7.setTransform(989.9,74.15);
 
-	this.text_8 = new cjs.Text("Here you can move\nGo further for stronger enemies", "bold 12px 'Arial'");
+	this.text_8 = new cjs.Text("在这里你可以移动\n为更强大的敌人走得更远", "bold 12px 'Arial'");
 	this.text_8.textAlign = "center";
 	this.text_8.lineHeight = 15;
 	this.text_8.lineWidth = 167;
 	this.text_8.parent = this;
 	this.text_8.setTransform(805.05,147.55,1.1234,1.1234);
 
-	this.text_9 = new cjs.Text("Enemy Mini UI", "bold 12px 'Arial'");
+	this.text_9 = new cjs.Text("敌人迷你用户界面", "bold 12px 'Arial'");
 	this.text_9.textAlign = "center";
 	this.text_9.lineHeight = 15;
 	this.text_9.lineWidth = 120;
 	this.text_9.parent = this;
 	this.text_9.setTransform(398.3,117.65,1.6039,1.6039);
 
-	this.text_10 = new cjs.Text("Your Mini UI", "bold 12px 'Arial'");
+	this.text_10 = new cjs.Text("你的迷你用户界面", "bold 12px 'Arial'");
 	this.text_10.textAlign = "center";
 	this.text_10.lineHeight = 15;
 	this.text_10.lineWidth = 120;
@@ -2349,7 +2349,7 @@ p.nominalBounds = new cjs.Rectangle(-2.3,-14.6,53.699999999999996,66.8);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.stat_desc = new cjs.Text("Maximal amount of your health points", "bold 10px 'Arial'", "#FFFFFF");
+	this.stat_desc = new cjs.Text("最大生命值点数", "bold 10px 'Arial'", "#FFFFFF");
 	this.stat_desc.name = "stat_desc";
 	this.stat_desc.textAlign = "center";
 	this.stat_desc.lineHeight = 13;
@@ -2357,7 +2357,7 @@ p.nominalBounds = new cjs.Rectangle(-2.3,-14.6,53.699999999999996,66.8);
 	this.stat_desc.parent = this;
 	this.stat_desc.setTransform(98.8458,-3.25,1.265,1.2937);
 
-	this.stat_name = new cjs.Text("Max HP", "bold 12px 'Arial'", "#FFFFFF");
+	this.stat_name = new cjs.Text("最大生命值", "bold 12px 'Arial'", "#FFFFFF");
 	this.stat_name.name = "stat_name";
 	this.stat_name.textAlign = "center";
 	this.stat_name.lineHeight = 16;
@@ -2700,7 +2700,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,63.2,1.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.text = new cjs.Text("Respawn", "bold 18px 'Arial'");
+	this.text = new cjs.Text("重生", "bold 18px 'Arial'");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 22;
 	this.text.lineWidth = 100;
@@ -3032,42 +3032,42 @@ p.nominalBounds = new cjs.Rectangle(0,0,43,43);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.bonus5 = new cjs.Text("AGI: 8", "bold 6px 'Arial'", "#FFFFCC");
+	this.bonus5 = new cjs.Text("敏捷: 8", "bold 6px 'Arial'", "#FFFFCC");
 	this.bonus5.name = "bonus5";
 	this.bonus5.lineHeight = 7;
 	this.bonus5.lineWidth = 121;
 	this.bonus5.parent = this;
 	this.bonus5.setTransform(6.85,227.4,1.7773,1.7773);
 
-	this.bonus4 = new cjs.Text("AGI: 8", "bold 6px 'Arial'", "#FFFFCC");
+	this.bonus4 = new cjs.Text("敏捷: 8", "bold 6px 'Arial'", "#FFFFCC");
 	this.bonus4.name = "bonus4";
 	this.bonus4.lineHeight = 7;
 	this.bonus4.lineWidth = 121;
 	this.bonus4.parent = this;
 	this.bonus4.setTransform(6.85,207.95,1.7773,1.7773);
 
-	this.bonus3 = new cjs.Text("AGI: 8", "bold 6px 'Arial'", "#FFFFCC");
+	this.bonus3 = new cjs.Text("敏捷: 8", "bold 6px 'Arial'", "#FFFFCC");
 	this.bonus3.name = "bonus3";
 	this.bonus3.lineHeight = 7;
 	this.bonus3.lineWidth = 121;
 	this.bonus3.parent = this;
 	this.bonus3.setTransform(6.85,188.45,1.7773,1.7773);
 
-	this.bonus2 = new cjs.Text("AGI: 8", "bold 6px 'Arial'", "#FFFFCC");
+	this.bonus2 = new cjs.Text("敏捷: 8", "bold 6px 'Arial'", "#FFFFCC");
 	this.bonus2.name = "bonus2";
 	this.bonus2.lineHeight = 7;
 	this.bonus2.lineWidth = 121;
 	this.bonus2.parent = this;
 	this.bonus2.setTransform(6.85,169,1.7773,1.7773);
 
-	this.bonus1 = new cjs.Text("Block Chance: 2.5%", "bold 6px 'Arial'", "#FFFFFF");
+	this.bonus1 = new cjs.Text("格挡几率: 2.5%", "bold 6px 'Arial'", "#FFFFFF");
 	this.bonus1.name = "bonus1";
 	this.bonus1.lineHeight = 7;
 	this.bonus1.lineWidth = 121;
 	this.bonus1.parent = this;
 	this.bonus1.setTransform(6.85,149.55,1.7773,1.7773);
 
-	this.bonus = new cjs.Text("Bonus Stats", "bold 6px 'Arial'", "#FFFFFF");
+	this.bonus = new cjs.Text("奖励属性", "bold 6px 'Arial'", "#FFFFFF");
 	this.bonus.name = "bonus";
 	this.bonus.textAlign = "center";
 	this.bonus.lineHeight = 7;
@@ -3083,7 +3083,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,43,43);
 	this.DMG.parent = this;
 	this.DMG.setTransform(114.55,98.5,1.7773,1.7773);
 
-	this.baseDMG = new cjs.Text("Base Damage", "bold 6px 'Arial'", "#FFFFFF");
+	this.baseDMG = new cjs.Text("基础伤害", "bold 6px 'Arial'", "#FFFFFF");
 	this.baseDMG.name = "baseDMG";
 	this.baseDMG.textAlign = "center";
 	this.baseDMG.lineHeight = 7;
@@ -3091,21 +3091,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,43,43);
 	this.baseDMG.parent = this;
 	this.baseDMG.setTransform(114.55,79.05,1.7773,1.7773);
 
-	this.level = new cjs.Text("Level 4", "bold 6px 'Arial'", "#FFFFFF");
+	this.level = new cjs.Text("等级 4", "bold 6px 'Arial'", "#FFFFFF");
 	this.level.name = "level";
 	this.level.lineHeight = 7;
 	this.level.lineWidth = 121;
 	this.level.parent = this;
 	this.level.setTransform(6.85,56.7,1.7773,1.7773);
 
-	this.rarity = new cjs.Text("Uncommon", "bold 6px 'Arial'", "#FFFF66");
+	this.rarity = new cjs.Text("罕见", "bold 6px 'Arial'", "#FFFF66");
 	this.rarity.name = "rarity";
 	this.rarity.lineHeight = 7;
 	this.rarity.lineWidth = 121;
 	this.rarity.parent = this;
 	this.rarity.setTransform(6.85,37.25,1.7773,1.7773);
 
-	this.namee = new cjs.Text("Fast Sword", "bold 10px 'Arial'", "#FFFFFF");
+	this.namee = new cjs.Text("快剑", "bold 10px 'Arial'", "#FFFFFF");
 	this.namee.name = "namee";
 	this.namee.lineHeight = 11;
 	this.namee.lineWidth = 155;
@@ -4085,7 +4085,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,13,16);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.text = new cjs.Text("Watch an ad to get free\n5 min of SpeedUP", "bold 21px 'Consolas'", "#003300");
+	this.text = new cjs.Text("观看广告即可免费获得\n5 分钟的 加速", "bold 21px 'Consolas'", "#003300");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 27;
 	this.text.parent = this;
@@ -4132,7 +4132,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,167,48);
 	this.stat41_q.setTransform(7.3,769.85,1,1,0,0,0,7.2,7.2);
 	new cjs.ButtonHelper(this.stat41_q, 0, 1, 2);
 
-	this.stat41_text = new cjs.Text("Weaker Power: 0.67%", "bold 12px 'Arial'");
+	this.stat41_text = new cjs.Text("虚弱力量: 0.67%", "bold 12px 'Arial'");
 	this.stat41_text.name = "stat41_text";
 	this.stat41_text.lineHeight = 15;
 	this.stat41_text.lineWidth = 184;
@@ -4144,7 +4144,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,167,48);
 	this.stat40_q.setTransform(7.3,752.15,1,1,0,0,0,7.2,7.2);
 	new cjs.ButtonHelper(this.stat40_q, 0, 1, 2);
 
-	this.stat40_text = new cjs.Text("Weaker Chance: 1.11%", "bold 12px 'Arial'");
+	this.stat40_text = new cjs.Text("虚弱几率: 1.11%", "bold 12px 'Arial'");
 	this.stat40_text.name = "stat40_text";
 	this.stat40_text.lineHeight = 15;
 	this.stat40_text.lineWidth = 184;
@@ -5276,7 +5276,7 @@ p.nominalBounds = new cjs.Rectangle(-0.9,-0.9,34.3,34.4);
 	this.timeline.addTween(cjs.Tween.get(this.ii).wait(2));
 
 	// Слой_1
-	this.text = new cjs.Text("Equip", "bold 9px 'Arial'", "#FFFFFF");
+	this.text = new cjs.Text("装备", "bold 9px 'Arial'", "#FFFFFF");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 42;
@@ -5289,7 +5289,7 @@ p.nominalBounds = new cjs.Rectangle(-0.9,-0.9,34.3,34.4);
 	this.instance_1 = new lib.CachedBmp_146();
 	this.instance_1.setTransform(-0.95,-0.95,0.8445,0.8445);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text,p:{text:"Equip",font:"bold 9px 'Arial'"}}]}).to({state:[{t:this.instance_1},{t:this.text,p:{text:"",font:"9px 'Arial-BoldMT'"}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text,p:{text:"装备",font:"bold 9px 'Arial'"}}]}).to({state:[{t:this.instance_1},{t:this.text,p:{text:"",font:"9px 'Arial-BoldMT'"}}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -5494,7 +5494,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.text = new cjs.Text("Inventory", "bold 9px 'Arial'", "#FFFFFF");
+	this.text = new cjs.Text("仓库", "bold 9px 'Arial'", "#FFFFFF");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 99;
@@ -5649,14 +5649,14 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.Edef_text.parent = this;
 	this.Edef_text.setTransform(484.85,78.75);
 
-	this.Eatk_text = new cjs.Text("Attack: 5.16 - 13.4", "bold 14px 'Arial'", "#FFCCCC");
+	this.Eatk_text = new cjs.Text("攻击: 5.16 - 13.4", "bold 14px 'Arial'", "#FFCCCC");
 	this.Eatk_text.name = "Eatk_text";
 	this.Eatk_text.lineHeight = 18;
 	this.Eatk_text.lineWidth = 214;
 	this.Eatk_text.parent = this;
 	this.Eatk_text.setTransform(484.713,59.15,0.9208,1);
 
-	this.Ehp_text = new cjs.Text("Max HP: 227", "bold 14px 'Arial'", "#CCFFCC");
+	this.Ehp_text = new cjs.Text("最大生命值: 227", "bold 14px 'Arial'", "#CCFFCC");
 	this.Ehp_text.name = "Ehp_text";
 	this.Ehp_text.lineHeight = 18;
 	this.Ehp_text.lineWidth = 197;
@@ -5709,21 +5709,21 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.el_text.parent = this;
 	this.el_text.setTransform(268.25,141.6);
 
-	this.matk_text = new cjs.Text("M.Attack: 2.12 - 5.8 {55%}", "bold 14px 'Arial'", "#FFCCFF");
+	this.matk_text = new cjs.Text("魔法攻击: 2.12 - 5.8 {55%}", "bold 14px 'Arial'", "#FFCCFF");
 	this.matk_text.name = "matk_text";
 	this.matk_text.lineHeight = 18;
 	this.matk_text.lineWidth = 203;
 	this.matk_text.parent = this;
 	this.matk_text.setTransform(268.25,122);
 
-	this.mana_text = new cjs.Text("Max Mana: 200", "bold 14px 'Arial'", "#FFCCFF");
+	this.mana_text = new cjs.Text("法力上限: 200", "bold 14px 'Arial'", "#FFCCFF");
 	this.mana_text.name = "mana_text";
 	this.mana_text.lineHeight = 18;
 	this.mana_text.lineWidth = 202;
 	this.mana_text.parent = this;
 	this.mana_text.setTransform(268.25,102.4);
 
-	this.aspd_text = new cjs.Text("Atk. Speed: 0.81 sec. (x1)", "bold 14px 'Arial'", "#FFFFCC");
+	this.aspd_text = new cjs.Text("攻击速度: 0.81 秒. (x1)", "bold 14px 'Arial'", "#FFFFCC");
 	this.aspd_text.name = "aspd_text";
 	this.aspd_text.lineHeight = 18;
 	this.aspd_text.lineWidth = 202;
@@ -5765,7 +5765,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.text_1.parent = this;
 	this.text_1.setTransform(123.5571,333.5,0.7331,0.7331);
 
-	this.maxDist_t = new cjs.Text("Max Distance: 11,75 km [Lv. 67]", "bold 12px 'Arial'", "#FFFFFF");
+	this.maxDist_t = new cjs.Text("最大距离: 11,75 km [Lv. 67]", "bold 12px 'Arial'", "#FFFFFF");
 	this.maxDist_t.name = "maxDist_t";
 	this.maxDist_t.textAlign = "center";
 	this.maxDist_t.lineHeight = 14;
@@ -5773,7 +5773,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.maxDist_t.parent = this;
 	this.maxDist_t.setTransform(122.55,312.65);
 
-	this.a_eff = new cjs.Text("110% [+1 LV]", "bold 10px 'Arial'", "#33CC66");
+	this.a_eff = new cjs.Text("110% [+1 等级]", "bold 10px 'Arial'", "#33CC66");
 	this.a_eff.name = "a_eff";
 	this.a_eff.textAlign = "center";
 	this.a_eff.lineHeight = 11;
@@ -5781,7 +5781,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,-19.9,152.70000000000002,138.7);
 	this.a_eff.parent = this;
 	this.a_eff.setTransform(179.15,294.5);
 
-	this.w_eff = new cjs.Text("70% [-3 LV]", "bold 10px 'Arial'", "#CC0000");
+	this.w_eff = new cjs.Text("70% [-3 等级]", "bold 10px 'Arial'", "#CC0000");
 	this.w_eff.name = "w_eff";
 	this.w_eff.textAlign = "center";
 	this.w_eff.lineHeight = 11;
@@ -6972,33 +6972,33 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			
 			if (rarity == TRASH) {
 				if (rand == 0) {
-					this.name += "Awful";
+					this.name += "糟糕的";
 				}
 				else if (rand == 1) {
-					this.name += "Bad";
+					this.name += "坏的";
 				}
 				else if (rand == 2) {
-					this.name += "Trash";
+					this.name += "垃圾的";
 				}
 				else if (rand == 3) {
-					this.name += "Horrorful";
+					this.name += "可怕的";
 				}
 				else if (rand == 4) {
-					this.name += "Idiotic";
+					this.name += "愚蠢的";
 				}
 			}
 			else if (rarity == COMMON) {
 				if (rand == 0) {
-					this.name += "Common";
+					this.name += "普通的";
 				}
 				else if (rand == 1) {
-					this.name += "Usual";
+					this.name += "一般的";
 				}
 				else if (rand == 2) {
-					this.name += "Common";
+					this.name += "普通的";
 				}
 				else if (rand == 3) {
-					this.name += "Usual";
+					this.name += "一般的";
 				}
 				else if (rand == 4) {
 					this.name += "";
@@ -7006,104 +7006,104 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			}
 			else if (rarity == UNCOMMON) {
 				if (rand == 0) {
-					this.name += "Uncommon";
+					this.name += "不常见的";
 				}
 				else if (rand == 1) {
-					this.name += "Unique";
+					this.name += "独特的";
 				}
 				else if (rand == 2) {
-					this.name += "Unusual";
+					this.name += "不寻常的";
 				}
 				else if (rand == 3) {
-					this.name += "Magical";
+					this.name += "神奇的";
 				}
 				else if (rand == 4) {
-					this.name += "Well-Made";
+					this.name += "制作精良的";
 				}
 			}
 			else if (rarity == RARE) {
 				if (rand == 0) {
-					this.name += "Rare";
+					this.name += "稀有的";
 				}
 				else if (rand == 1) {
-					this.name += "Cool";
+					this.name += "酷酷的";
 				}
 				else if (rand == 2) {
-					this.name += "Good";
+					this.name += "不错的";
 				}
 				else if (rand == 3) {
-					this.name += "Strong";
+					this.name += "强大的";
 				}
 				else if (rand == 4) {
-					this.name += "Heavy";
+					this.name += "笨重的";
 				}
 			}
 			else if (rarity == EPIC) {
 				if (rand == 0) {
-					this.name += "Epic";
+					this.name += "史诗的";
 				}
 				else if (rand == 1) {
-					this.name += "Cool";
+					this.name += "很酷的";
 				}
 				else if (rand == 2) {
-					this.name += "Awesome";
+					this.name += "惊人的";
 				}
 				else if (rand == 3) {
-					this.name += "Mega";
+					this.name += "高级的";
 				}
 				else if (rand == 4) {
-					this.name += "Great";
+					this.name += "伟大的";
 				}
 			}
 			else if (rarity == LEGENDARY) {
 				if (rand == 0) {
-					this.name += "Legendary";
+					this.name += "传奇的";
 				}
 				else if (rand == 1) {
-					this.name += "Amazing";
+					this.name += "神奇的";
 				}
 				else if (rand == 2) {
-					this.name += "Super-Cool";
+					this.name += "非常酷的";
 				}
 				else if (rand == 3) {
-					this.name += "Greatest";
+					this.name += "最伟大的";
 				}
 				else if (rand == 4) {
-					this.name += "Awesomest";
+					this.name += "最棒的";
 				}
 			}
 			else if (rarity == Mythical) {
 				if (rand == 0) {
-					this.name += "Mythical";
+					this.name += "神话的";
 				}
 				else if (rand == 1) {
-					this.name += "Demonic";
+					this.name += "恶魔般的";
 				}
 				else if (rand == 2) {
-					this.name += "Mega-Cool";
+					this.name += "超级酷的";
 				}
 				else if (rand == 3) {
-					this.name += "Supergreat";
+					this.name += "超级伟大的";
 				}
 				else if (rand == 4) {
-					this.name += "Meta";
+					this.name += "次元的";
 				}
 			}
 			else if (rarity == Godly) {
 				if (rand == 0) {
-					this.name += "Godly";
+					this.name += "虔诚的";
 				}
 				else if (rand == 1) {
-					this.name += "Heaven";
+					this.name += "天堂的";
 				}
 				else if (rand == 2) {
-					this.name += "Best";
+					this.name += "最好的";
 				}
 				else if (rand == 3) {
-					this.name += "Ultimate";
+					this.name += "终极的";
 				}
 				else if (rand == 4) {
-					this.name += "PENTA";
+					this.name += "超神的";
 				}
 			}
 			
@@ -7123,16 +7123,16 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			this.DPS = this.DPS.times(nd(1.0825 ** (rarity-1))).times(nd((0.95 + (0.1 * Math.random()))));
 			
 			if (skin == 0) {
-				this.name += "Wooden ";
+				this.name += "木 ";
 			}
 			else if (skin == 1) {
-				this.name += "Stone ";
+				this.name += "石 ";
 			}
 			else if (skin == 2) {
-				this.name += "Copper ";
+				this.name += "铜 ";
 			}
 			else if (skin == 3) {
-				this.name += "Iron ";
+				this.name += "铁 ";
 			}
 			
 			if (weight == LIGHT) {
@@ -7141,7 +7141,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.dps = this.DPS.times(this.eff);
 				this.atkMin = nd(0.8).times(this.dps);
 				this.atkMax = nd(1.8).times(this.dps);
-				this.name += "Dagger";
+				this.name += "匕首";
 			}
 			else if (weight == MEDIUM) {
 				this.aspBase = nd(1);
@@ -7149,7 +7149,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.dps = this.DPS.times(this.eff);
 				this.atkMin = nd(0.75).times(this.dps);
 				this.atkMax = nd(1.25).times(this.dps);
-				this.name += "Sword";
+				this.name += "剑";
 			}
 			else if (weight == HARD) {
 				this.aspBase = nd(1.4);
@@ -7157,7 +7157,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.dps = this.DPS.times(this.eff);
 				this.atkMin = nd(0.75).times(this.dps);
 				this.atkMax = nd(0.95).times(this.dps);
-				this.name += "Axe";
+				this.name += "斧";
 			}
 			
 			
@@ -9235,7 +9235,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		
 			if (player.direction == STAY) {
 				this.setStop.gotoAndStop(1);
-				this.whereMoving.text = "休息 (x10 H.Rg.)";
+				this.whereMoving.text = "休息 (x10 生命值回复)";
 			} else this.setStop.gotoAndStop(0);
 		
 			if (player.direction == RIGHT) {
@@ -9247,7 +9247,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.setLoop.gotoAndStop(1);
 				this.loopIs.text = "循环: 是";
 				this.loopDist.visible = true;
-				this.loopDist.text = "L.距离: " + Math.round(player.loopD) + " 米";
+				this.loopDist.text = "循环距离: " + Math.round(player.loopD) + " 米";
 			} else {
 				this.setLoop.gotoAndStop(0);
 				this.loopIs.text = "循环: 否";
@@ -10607,8 +10607,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			player.armor.defMult = player.armor.DEFMULT.times(player.armor.eff);
 			
 			
-			this.downUI.w_eff.text = format(player.weapon.eff.times(100)) + "% [" + (player.weapon.level - player.posXLv) + " LV]";
-			this.downUI.a_eff.text = format(player.armor.eff.times(100)) + "% [" + (player.armor.level - player.posXLv) + " LV]";
+			this.downUI.w_eff.text = format(player.weapon.eff.times(100)) + "% [" + (player.weapon.level - player.posXLv) + " 等级]";
+			this.downUI.a_eff.text = format(player.armor.eff.times(100)) + "% [" + (player.armor.level - player.posXLv) + " 等级]";
 			
 			if (player.weapon.eff.lte(0.5)) {
 				this.downUI.w_eff.color = "#CC0000";
@@ -11567,42 +11567,42 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 			else if (cell == 46) {
 				this.exportRoot.invHover.namee.text = player.armor.name;
 				if (player.armor.rarity == TRASH) {
-					this.exportRoot.invHover.rarity.text = "Trash";
+					this.exportRoot.invHover.rarity.text = "垃圾";
 					this.exportRoot.invHover.rarity.color = "#999999";
 				}
 				else if (player.armor.rarity == COMMON) {
-					this.exportRoot.invHover.rarity.text = "Common";
+					this.exportRoot.invHover.rarity.text = "普通";
 					this.exportRoot.invHover.rarity.color = "#FFFFFF";
 				}
 				else if (player.armor.rarity == UNCOMMON) {
-					this.exportRoot.invHover.rarity.text = "Uncommon";
+					this.exportRoot.invHover.rarity.text = "罕见";
 					this.exportRoot.invHover.rarity.color = "#66CC66";
 				}
 				else if (player.armor.rarity == RARE) {
-					this.exportRoot.invHover.rarity.text = "Rare";
+					this.exportRoot.invHover.rarity.text = "稀有";
 					this.exportRoot.invHover.rarity.color = "#0066FF";
 				}
 				else if (player.armor.rarity == EPIC) {
-					this.exportRoot.invHover.rarity.text = "Epic";
+					this.exportRoot.invHover.rarity.text = "史诗";
 					this.exportRoot.invHover.rarity.color = "#CC00CC";
 				}
 				else if (player.armor.rarity == LEGENDARY) {
-					this.exportRoot.invHover.rarity.text = "Legendary";
+					this.exportRoot.invHover.rarity.text = "传奇";
 					this.exportRoot.invHover.rarity.color = "#FF9933";
 				}
 				else if (player.armor.rarity == MYTHICAL) {
-					this.exportRoot.invHover.rarity.text = "Mythical";
+					this.exportRoot.invHover.rarity.text = "神话";
 					this.exportRoot.invHover.rarity.color = "#FF3333";
 				}
 				else if (player.armor.rarity == GODLY) {
-					this.exportRoot.invHover.rarity.text = "Godly";
+					this.exportRoot.invHover.rarity.text = "神圣的";
 					this.exportRoot.invHover.rarity.color = "#FFFF66";
 				}
-				this.exportRoot.invHover.level.text = "Level " + player.armor.level;
+				this.exportRoot.invHover.level.text = "等级 " + player.armor.level;
 			
-				this.exportRoot.invHover.baseDMG.text = "Base Armor";
+				this.exportRoot.invHover.baseDMG.text = "基础护甲";
 				this.exportRoot.invHover.DMG.text = format(player.armor.defMult);
-				this.exportRoot.invHover.bonus1.text = "Move Speed: " + Math.round(player.armor.baseSpeed * 100)/100;
+				this.exportRoot.invHover.bonus1.text = "移动速度: " + Math.round(player.armor.baseSpeed * 100)/100;
 				
 				
 				if (player.armor.dop_stats >= 1) {
@@ -11823,8 +11823,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.hp_q.addEventListener("mouseover", hovMHP.bind(this));
 		function hovMHP() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Max HP";
-			this.statHover.stat_desc.text = "Maximal amount of your health points";
+			this.statHover.stat_name.text = "最大生命值";
+			this.statHover.stat_desc.text = "最大生命值点数";
 			this.statHover.x = this.downUI.hp_q.x + 72;
 			this.statHover.y = this.downUI.hp_q.y + 360;
 		}
@@ -11841,8 +11841,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.atk_q.addEventListener("mouseover", hovATK.bind(this));
 		function hovATK() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Attack";
-			this.statHover.stat_desc.text = "Clear damage you deal to enemy if he had 0 defence (percentage of damage you deal to enemy)";
+			this.statHover.stat_name.text = "攻击";
+			this.statHover.stat_desc.text = "如果敌人的防御为 0，则清除您对敌人造成的伤害（您对敌人造成的伤害的百分比）";
 			this.statHover.x = this.downUI.atk_q.x + 72;
 			this.statHover.y = this.downUI.atk_q.y + 360;
 		}
@@ -11858,8 +11858,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.def_q.addEventListener("mouseover", hovDEF.bind(this));
 		function hovDEF() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Defence";
-			this.statHover.stat_desc.text = "How much damage you block (in %). Formula: damage = atk*(atk/(atk+def))";
+			this.statHover.stat_name.text = "防御";
+			this.statHover.stat_desc.text = "你阻挡了多少伤害（以百分比为单位）。 公式：伤害= 攻击*(攻击/(攻击+防御))";
 			this.statHover.x = this.downUI.def_q.x + 72;
 			this.statHover.y = this.downUI.def_q.y + 360;
 		}
@@ -11877,8 +11877,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.aspd_q.addEventListener("mouseover", hovASPD.bind(this));
 		function hovASPD() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Atk. Speed";
-			this.statHover.stat_desc.text = "How much time does it take for you to attack enemy";
+			this.statHover.stat_name.text = "攻击速度";
+			this.statHover.stat_desc.text = "攻击敌人需要多少时间";
 			this.statHover.x = this.downUI.aspd_q.x + 72;
 			this.statHover.y = this.downUI.aspd_q.y + 360;
 		}
@@ -11895,8 +11895,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.mana_q.addEventListener("mouseover", hovMANA.bind(this));
 		function hovMANA() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Max Mana";
-			this.statHover.stat_desc.text = "Max amount of your mana";
+			this.statHover.stat_name.text = "法力上限";
+			this.statHover.stat_desc.text = "最大法力值";
 			this.statHover.x = this.downUI.mana_q.x + 72;
 			this.statHover.y = this.downUI.mana_q.y + 360;
 		}
@@ -11914,7 +11914,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		function hovMATK() {
 			this.statHover.visible = true;
 			this.statHover.stat_name.text = "M.Attack";
-			this.statHover.stat_desc.text = "Magical attack. Amount of damage (can't be blocked or evaded) you deal to enemy using magical skills. 0 when you don't have any element.";
+			this.statHover.stat_desc.text = "魔法攻击。 你使用魔法技能对敌人造成的伤害量（不能被阻挡或回避）。 0 当您没有任何元素时。";
 			this.statHover.x = this.downUI.matk_q.x + 72;
 			this.statHover.y = this.downUI.matk_q.y + 360;
 		}
@@ -11931,8 +11931,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.el_q.addEventListener("mouseover", hovEL.bind(this));
 		function hovEL() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Element";
-			this.statHover.stat_desc.text = "Your element. Determines your skills and stats you absorb more than others";
+			this.statHover.stat_name.text = "元素";
+			this.statHover.stat_desc.text = "你的元素。 确定您比其他人吸收更多的技能和属性";
 			this.statHover.x = this.downUI.el_q.x + 72;
 			this.statHover.y = this.downUI.el_q.y + 360;
 		}
@@ -11949,8 +11949,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.str_q.addEventListener("mouseover", hovSTR.bind(this));
 		function hovSTR() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Strength";
-			this.statHover.stat_desc.text = "Determines your attack power";
+			this.statHover.stat_name.text = "力量";
+			this.statHover.stat_desc.text = "决定你的攻击力";
 			this.statHover.x = this.downUI.str_q.x + 72;
 			this.statHover.y = this.downUI.str_q.y + 360;
 		}
@@ -11967,8 +11967,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.vit_q.addEventListener("mouseover", hovVIT.bind(this));
 		function hovVIT() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Vitality";
-			this.statHover.stat_desc.text = "Determines your max hp";
+			this.statHover.stat_name.text = "耐力";
+			this.statHover.stat_desc.text = "决定你的最大生命值";
 			this.statHover.x = this.downUI.vit_q.x + 72;
 			this.statHover.y = this.downUI.vit_q.y + 360;
 		}
@@ -11985,8 +11985,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.agi_q.addEventListener("mouseover", hovAGI.bind(this));
 		function hovAGI() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Agility";
-			this.statHover.stat_desc.text = "Determines your attack and move speed. Also increases your precision";
+			this.statHover.stat_name.text = "敏捷";
+			this.statHover.stat_desc.text = "决定你的攻击和移动速度。 还可以提高您的命中率";
 			this.statHover.x = this.downUI.agi_q.x + 72;
 			this.statHover.y = this.downUI.agi_q.y + 360;
 		}
@@ -12003,8 +12003,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.arm_q.addEventListener("mouseover", hovARM.bind(this));
 		function hovARM() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Armor";
-			this.statHover.stat_desc.text = "Determines your defence";
+			this.statHover.stat_name.text = "护甲";
+			this.statHover.stat_desc.text = "决定你的防御";
 			this.statHover.x = this.downUI.arm_q.x + 72;
 			this.statHover.y = this.downUI.arm_q.y + 360;
 		}
@@ -12021,8 +12021,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.int_q.addEventListener("mouseover", hovINT.bind(this));
 		function hovINT() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Intellect";
-			this.statHover.stat_desc.text = "Determines your mana and magical attack";
+			this.statHover.stat_name.text = "智力";
+			this.statHover.stat_desc.text = "决定你的法力和法术攻击";
 			this.statHover.x = this.downUI.int_q.x + 72;
 			this.statHover.y = this.downUI.int_q.y + 360;
 		}
@@ -12039,8 +12039,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.skill1.addEventListener("mouseover", hovSkill1.bind(this));
 		function hovSkill1() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Power Slash";
-			this.statHover.stat_desc.text = "Strong Attack - deals 200% of damage. Base MP Cost: 10";
+			this.statHover.stat_name.text = "强力一击";
+			this.statHover.stat_desc.text = "强力一击 - 造成 200% 的伤害。 基础 法力 成本: 10";
 			this.statHover.x = this.downUI.skill1.x + 0;
 			this.statHover.y = this.downUI.skill1.y + 320;
 		}
@@ -12056,8 +12056,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.main_stats.statList.stat0_q.addEventListener("mouseover", hovS0.bind(this));
 		function hovS0() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "HP Regeneration";
-			this.statHover.stat_desc.text = "Amount of HP you regenerate every second";
+			this.statHover.stat_name.text = "生命值回复";
+			this.statHover.stat_desc.text = "你每秒再生的 生命值 数量";
 			this.statHover.x = this.downUI.main_stats.statList.stat0_q.x + 324;
 			this.statHover.y = this.downUI.main_stats.statList.stat0_q.y + 524;
 		}
@@ -12075,8 +12075,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.main_stats.statList.stat1_q.addEventListener("mouseover", hovS1.bind(this));
 		function hovS1() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "MP Regeneration";
-			this.statHover.stat_desc.text = "Amount of Mana you regenerate every second";
+			this.statHover.stat_name.text = "法力回复";
+			this.statHover.stat_desc.text = "你每秒再生的法力值";
 			this.statHover.x = this.downUI.main_stats.statList.stat1_q.x + 324;
 			this.statHover.y = this.downUI.main_stats.statList.stat1_q.y + 524;
 		}
@@ -12093,8 +12093,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.main_stats.statList.stat2_q.addEventListener("mouseover", hovS2.bind(this));
 		function hovS2() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Mana Consumption";
-			this.statHover.stat_desc.text = "Make skills cost less mana";
+			this.statHover.stat_name.text = "法力消耗";
+			this.statHover.stat_desc.text = "使技能消耗更少的法力";
 			this.statHover.x = this.downUI.main_stats.statList.stat2_q.x + 324;
 			this.statHover.y = this.downUI.main_stats.statList.stat2_q.y + 524;
 		}
@@ -12111,8 +12111,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.main_stats.statList.stat3_q.addEventListener("mouseover", hovS3.bind(this));
 		function hovS3() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Precision";
-			this.statHover.stat_desc.text = "Your chance to hit enemy";
+			this.statHover.stat_name.text = "精准";
+			this.statHover.stat_desc.text = "你击中敌人的几率";
 			this.statHover.x = this.downUI.main_stats.statList.stat3_q.x + 324;
 			this.statHover.y = this.downUI.main_stats.statList.stat3_q.y + 524;
 		}
@@ -12128,8 +12128,8 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		this.downUI.main_stats.statList.stat4_q.addEventListener("mouseover", hovS4.bind(this));
 		function hovS4() {
 			this.statHover.visible = true;
-			this.statHover.stat_name.text = "Avoid";
-			this.statHover.stat_desc.text = "Your chance to evade from enemy's attack";
+			this.statHover.stat_name.text = "闪避";
+			this.statHover.stat_desc.text = "你躲避敌人攻击的几率";
 			this.statHover.x = this.downUI.main_stats.statList.stat4_q.x + 324;
 			this.statHover.y = this.downUI.main_stats.statList.stat4_q.y + 524;
 		}
@@ -12287,20 +12287,20 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 				this.exportRoot.statHover.stat_desc.text = "成功格挡后你格挡的伤害百分比";
 			}
 			else if (stat == 23) {
-				this.exportRoot.statHover.stat_name.text = "Bleed Chance";
-				this.exportRoot.statHover.stat_desc.text = "Your chance to cause enemy bleed";
+				this.exportRoot.statHover.stat_name.text = "流血几率";
+				this.exportRoot.statHover.stat_desc.text = "你有几率让敌人流血";
 			}
 			else if (stat == 24) {
-				this.exportRoot.statHover.stat_name.text = "Lifesteal";
-				this.exportRoot.statHover.stat_desc.text = "How much % of damage dealt you recover as your health";
+				this.exportRoot.statHover.stat_name.text = "生命偷取";
+				this.exportRoot.statHover.stat_desc.text = "你造成的伤害有多少 % 会随着你的健康恢复";
 			}
 			else if (stat == 25) {
-				this.exportRoot.statHover.stat_name.text = "Rage Chance";
-				this.exportRoot.statHover.stat_desc.text = "Your chance to get enraged (your attacks become stronger and faster)";
+				this.exportRoot.statHover.stat_name.text = "狂暴几率";
+				this.exportRoot.statHover.stat_desc.text = "你触发狂暴的几率（你的攻击变得越来越快）";
 			}
 			else if (stat == 26) {
-				this.exportRoot.statHover.stat_name.text = "Rage Power";
-				this.exportRoot.statHover.stat_desc.text = "Your rage buff power";
+				this.exportRoot.statHover.stat_name.text = "狂暴力量";
+				this.exportRoot.statHover.stat_desc.text = "你的狂暴增益力量";
 			}
 			else if (stat == 27) {
 				this.exportRoot.statHover.stat_name.text = "狂暴持续时间";
@@ -12450,7 +12450,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 		}
 		this.cGames.addEventListener("click", goCG.bind(this));
 		function goCG() {
-			window.open("http://crazygames.com/", "_blank");
+			window.open("http://gityx.com/", "_blank");
 		}
 		
 		const crazysdk = window.CrazyGames.CrazySDK.getInstance(); //Getting the SDK
@@ -12823,7 +12823,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.icell1},{t:this.icell2},{t:this.icell3},{t:this.icell4},{t:this.icell5},{t:this.icell6},{t:this.icell7},{t:this.icell8},{t:this.icell9},{t:this.icell10},{t:this.icell11},{t:this.icell12},{t:this.icell13},{t:this.icell14},{t:this.icell15},{t:this.icell16},{t:this.icell17},{t:this.icell18},{t:this.icell19},{t:this.icell20},{t:this.icell21},{t:this.icell22},{t:this.icell23},{t:this.icell24},{t:this.icell25},{t:this.icell26},{t:this.icell27},{t:this.icell28},{t:this.icell29},{t:this.icell30},{t:this.icell31},{t:this.icell32},{t:this.icell33},{t:this.icell34},{t:this.icell35},{t:this.icell36},{t:this.icell37},{t:this.icell38},{t:this.icell39},{t:this.icell40},{t:this.icell41},{t:this.icell42},{t:this.icell43},{t:this.icell44},{t:this.icell45}]}).wait(1));
 
 	// UI
-	this.s1Name = new cjs.Text("Power Slash", "bold 9px 'Arial'", "#FFFFFF");
+	this.s1Name = new cjs.Text("强力一击", "bold 9px 'Arial'", "#FFFFFF");
 	this.s1Name.name = "s1Name";
 	this.s1Name.textAlign = "center";
 	this.s1Name.lineHeight = 12;
@@ -12839,7 +12839,7 @@ p.nominalBounds = new cjs.Rectangle(-99.1,0,1421.6999999999998,464.2);
 	this.eqBtn.name = "eqBtn";
 	this.eqBtn.setTransform(997.95,421.15,1.1842,1.1842,0,0,0,23.4,10.1);
 
-	this.spd = new cjs.Text("Speed: 0.5m/s", "bold 13px 'Arial'", "#5C8599");
+	this.spd = new cjs.Text("速度: 0.5m/s", "bold 13px 'Arial'", "#5C8599");
 	this.spd.name = "spd";
 	this.spd.textAlign = "center";
 	this.spd.lineHeight = 17;
